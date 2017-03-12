@@ -4449,6 +4449,29 @@
 									"headNameLabel": {
 										"$ref": "AAAAAAFatiM+c3DOIU8="
 									}
+								},
+								{
+									"_type": "UMLNoteView",
+									"_id": "AAAAAAFaxIZWHinq7rA=",
+									"_parent": {
+										"$ref": "AAAAAAFaq1Vs/s9F+ks="
+									},
+									"visible": true,
+									"enabled": true,
+									"lineColor": "#000000",
+									"fillColor": "#ffffff",
+									"fontColor": "#000000",
+									"font": "Arial;11;0",
+									"showShadow": true,
+									"containerChangeable": false,
+									"containerExtending": false,
+									"left": 1352,
+									"top": 384,
+									"width": 87.12255859375,
+									"height": 89,
+									"autoResize": false,
+									"text": "\"file_id\" changed to \"fileshare_id\", \"file_id is a keyword",
+									"wordWrap": true
 								}
 							]
 						},
@@ -5067,7 +5090,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFaq1edZc9n/JE="
 									},
-									"name": "file_id",
+									"name": "fileshare_id",
 									"type": "INTEGER",
 									"length": 0,
 									"primaryKey": true,
@@ -5705,7 +5728,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFaq5qTIdNh1UU="
 									},
-									"name": "file_id",
+									"name": "fileshare_id",
 									"type": "INTEGER",
 									"length": 0,
 									"primaryKey": false,
