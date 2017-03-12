@@ -63,8 +63,9 @@
                     </li>
                     <!-- ./group request dropdown -->
                     
-                    <!-- profile and logout -->
+                    <!-- profile, login and logout -->
                     <li><a href="profile.php"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                    <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                     <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
                     <!-- ./profile logout -->
                     
