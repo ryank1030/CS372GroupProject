@@ -54,6 +54,7 @@
                                 <button class="btn btn-info btn-sm margin-left" type="button">Accept</button>
                                 <button class="btn btn-default btn-sm" type="button">Decline Request</button>
                             </a></li>
+                            <li class="divider"></li>
                             <li role="presentation"><a role="menuitem" tabindex="-1">Group Name 2
                                 <button class="btn btn-info btn-sm margin-left" type="button">Accept</button>
                                 <button class="btn btn-default btn-sm" type="button">Decline Request</button>
@@ -70,18 +71,25 @@
                 </ul>
                 
                 <!-- Search Bar -->
-                <div class="col-md-3">
                     <ul class="nav navbar-nav">
                         <li id="search-group" class="input-group">
                             <span class ="input-group-btn">
                                 <input type="text" class="form-control input-sm" placeholder="Search for a group" />
-                                <button class="btn btn-info btn-sm" type="button">
+                                <button class="btn btn-info dropdown-toggle btn-sm" type="button" data-toggle="dropdown">
                                     <i class="glyphicon glyphicon-search"></i>
                                 </button>
+                                <ul class="dropdown-menu search-dd">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1">Group Name 1
+                                        <button class="btn btn-info btn-sm margin-left" type="button"> Join </button></a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1">Group Name 2
+                                        <button class="btn btn-info btn-sm margin-left" type="button"> Join </button></a>
+                                    </li>
+                                </ul>
                             </span>
                         </li>
                     </ul>
-                </div>
                 <!-- ./search bar -->
                 
                 
@@ -99,7 +107,7 @@
         <!-- Page Header -->
         <div class="row">
             <div class="page-header">
-                <h3><img src="img/img.png" class="img-circle" alt="Profile Picture" width="70" height="70"> Dashboard</h3>      
+                <h2><img src="img/img.png" class="img-circle" alt="Profile Picture" width="70" height="70"> Dashboard</h2>
             </div>
         </div>
         <!-- /.page header -->

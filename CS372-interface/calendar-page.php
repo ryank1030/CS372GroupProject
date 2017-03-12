@@ -13,7 +13,12 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    
 </head>
 
 <body>
@@ -69,9 +74,18 @@
                         <li id="search-group" class="input-group">
                             <span class ="input-group-btn">
                                 <input type="text" class="form-control input-sm" placeholder="Search for a group" />
-                                <button class="btn btn-info btn-sm" type="button">
+                                <button class="btn btn-info dropdown-toggle btn-sm" type="button" data-toggle="dropdown">
                                     <i class="glyphicon glyphicon-search"></i>
                                 </button>
+                                <ul class="dropdown-menu search-dd">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1">Group Name 1
+                                        <button class="btn btn-info btn-sm margin-left" type="button"> Join </button></a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1">Group Name 2
+                                        <button class="btn btn-info btn-sm margin-left" type="button"> Join </button></a>
+                                    </li>
+                                </ul>
                             </span>
                         </li>
                     </ul>
@@ -93,7 +107,7 @@
     <div class="container">
         <div class="row">
         <div class="page-header">
-            <h3><img src="img/img.png" class="img-circle" alt="Profile Picture" width="70" height="70"> Calendar</h3>      
+            <h2><!--<img src="img/img.png" class="img-circle" alt="Profile Picture" width="70" height="70">--> Calendar</h2>      
         </div>
         </div>
     </div>               

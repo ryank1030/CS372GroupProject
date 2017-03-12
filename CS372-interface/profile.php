@@ -13,7 +13,12 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
+    
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    
 </head>
 
 <body>
@@ -31,7 +36,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Group Share</a>
+                <a class="navbar-brand" href="index.php">Group Share</a>
             </div>
                 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -64,14 +69,23 @@
                 </ul>
                 
                 <!-- Search Bar -->
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <ul class="nav navbar-nav">
                         <li id="search-group" class="input-group">
                             <span class ="input-group-btn">
                                 <input type="text" class="form-control input-sm" placeholder="Search for a group" />
-                                <button class="btn btn-info btn-sm" type="button">
+                                <button class="btn btn-info dropdown-toggle btn-sm" type="button" data-toggle="dropdown">
                                     <i class="glyphicon glyphicon-search"></i>
                                 </button>
+                                <ul class="dropdown-menu search-dd">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1">Group Name 1
+                                        <button class="btn btn-info btn-sm margin-left" type="button"> Join </button></a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1">Group Name 2
+                                        <button class="btn btn-info btn-sm margin-left" type="button"> Join </button></a>
+                                    </li>
+                                </ul>
                             </span>
                         </li>
                     </ul>
@@ -88,16 +102,70 @@
     </nav>
 
     <!-- Page Content -->
-    
-    <!-- Page Header -->
     <div class="container">
+        
+        <!-- Page Header -->
         <div class="row">
         <div class="page-header">
-            <h3><img src="img/img.png" class="img-circle" alt="Profile Picture" width="70" height="70"> Profile</h3>      
+            <h2><!--<img src="img/img.png" class="img-circle" alt="Profile Picture" width="70" height="70"> -->Profile</h2>      
         </div>
         </div>
-    </div>               
-    
+        <!-- ./page header -->
+        
+        <div class="row">
+            
+        <!-- Progile Picture -->
+        <div class="col-lg-3">
+            <div class="text-center">
+              <img src="img/img.png" class="img-circle" alt="Profile Picture" width="200" height="200">
+                <h5>Upload a different photo...</h5>
+              <input type="file" class="form-control">
+                <br>
+                <br>
+            </div>
+        </div>
+        <!-- ./ proflie picture -->
+        
+            
+        <!-- Personal Info -->
+        <form class="form-horizontal col-lg-9 border-left" role="form">
+            <div class="form-group">
+              <label for="fname">First Name:</label>
+              <input type="text" class="form-control" id="fname" value="John" />
+            </div>
+
+            <div class="form-group ">
+              <label for="lname">Last Name:</label>
+              <input type="text" class="form-control" id="lname" value="Smith" />
+            </div>
+
+            <div class="form-group">
+              <label for="uname">Username:</label>
+              <input type="text" class="form-control" id="uname" value="john.smith" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="text" class="form-control" id="email" value="john.smith@gmail.com" />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number:</label>
+              <input type="text" class="form-control" id="phone" value="306-555-5555" />
+            </div>
+        </form>
+        
+        <!-- ./personal info -->
+        
+        </div>
+        <!-- ./row -->
+        <br />
+        <br />
+        <div class="row">
+            <button class="btn btn-info center-block">Save Changes</button>
+        </div>
+        
+    </div>
     <!-- /.container -->
     
 
