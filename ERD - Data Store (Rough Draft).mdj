@@ -5687,7 +5687,7 @@
 										"reference": {
 											"$ref": "AAAAAAFaq5qTIdNh1UU="
 										},
-										"cardinality": "1"
+										"cardinality": "0, 1"
 									},
 									"end2": {
 										"_type": "ERDRelationshipEnd",
@@ -5753,7 +5753,7 @@
 									"referenceTo": {
 										"$ref": "AAAAAAFaq2LRJ8/EPtw="
 									},
-									"nullable": false,
+									"nullable": true,
 									"unique": false
 								}
 							]
