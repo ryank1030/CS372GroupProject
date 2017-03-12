@@ -3279,29 +3279,6 @@
 								},
 								{
 									"_type": "UMLNoteView",
-									"_id": "AAAAAAFaq62xy9TDtYw=",
-									"_parent": {
-										"$ref": "AAAAAAFaq1Vs/s9F+ks="
-									},
-									"visible": true,
-									"enabled": true,
-									"lineColor": "#000000",
-									"fillColor": "#ffffff",
-									"fontColor": "#000000",
-									"font": "Arial;11;0",
-									"showShadow": true,
-									"containerChangeable": false,
-									"containerExtending": false,
-									"left": 256,
-									"top": 752,
-									"width": 217,
-									"height": 111,
-									"autoResize": false,
-									"text": "user_or_group identifies the calendar as a user or group calendar (this was done because splitting it into two tables didn't make sense... they both share the same pool of calendar_id, otherwise I'd have to make two tables for group and personal messages, or check both tables each time a calendar_id is created)",
-									"wordWrap": true
-								},
-								{
-									"_type": "UMLNoteView",
 									"_id": "AAAAAAFaq8188dU4sXQ=",
 									"_parent": {
 										"$ref": "AAAAAAFaq1Vs/s9F+ks="
@@ -5319,12 +5296,15 @@
 									"_parent": {
 										"$ref": "AAAAAAFaq1gDTc+DwME="
 									},
-									"name": "owner_id",
+									"name": "user_id",
 									"type": "INTEGER",
 									"length": 0,
 									"primaryKey": false,
 									"foreignKey": true,
-									"nullable": false,
+									"referenceTo": {
+										"$ref": "AAAAAAFaq2LRJ8/EPtw="
+									},
+									"nullable": true,
 									"unique": false
 								},
 								{
@@ -5333,12 +5313,15 @@
 									"_parent": {
 										"$ref": "AAAAAAFaq1gDTc+DwME="
 									},
-									"name": "user_or_group",
-									"type": "BINARY",
+									"name": "group_id",
+									"type": "INTEGER",
 									"length": 0,
 									"primaryKey": false,
-									"foreignKey": false,
-									"nullable": false,
+									"foreignKey": true,
+									"referenceTo": {
+										"$ref": "AAAAAAFaq2MW1c/R3DE="
+									},
+									"nullable": true,
 									"unique": false
 								}
 							]
@@ -5531,7 +5514,7 @@
 									"name": "group_id",
 									"type": "INTEGER",
 									"length": 0,
-									"primaryKey": true,
+									"primaryKey": false,
 									"foreignKey": true,
 									"referenceTo": {
 										"$ref": "AAAAAAFaq2MW1c/R3DE="
@@ -5548,7 +5531,7 @@
 									"name": "user_id",
 									"type": "INTEGER",
 									"length": 0,
-									"primaryKey": true,
+									"primaryKey": false,
 									"foreignKey": true,
 									"referenceTo": {
 										"$ref": "AAAAAAFaq2LRJ8/EPtw="
@@ -5708,7 +5691,7 @@
 									"name": "group_id",
 									"type": "INTEGER",
 									"length": 0,
-									"primaryKey": true,
+									"primaryKey": false,
 									"foreignKey": true,
 									"referenceTo": {
 										"$ref": "AAAAAAFaq2MW1c/R3DE="
@@ -5725,7 +5708,7 @@
 									"name": "file_id",
 									"type": "INTEGER",
 									"length": 0,
-									"primaryKey": true,
+									"primaryKey": false,
 									"foreignKey": true,
 									"referenceTo": {
 										"$ref": "AAAAAAFaq2Mhns/XrqU="
@@ -5769,7 +5752,7 @@
 									"name": "group_id",
 									"type": "INTEGER",
 									"length": 0,
-									"primaryKey": true,
+									"primaryKey": false,
 									"foreignKey": true,
 									"referenceTo": {
 										"$ref": "AAAAAAFaq2MW1c/R3DE="
@@ -5786,7 +5769,7 @@
 									"name": "user_id",
 									"type": "INTEGER",
 									"length": 0,
-									"primaryKey": true,
+									"primaryKey": false,
 									"foreignKey": true,
 									"referenceTo": {
 										"$ref": "AAAAAAFaq2LRJ8/EPtw="
