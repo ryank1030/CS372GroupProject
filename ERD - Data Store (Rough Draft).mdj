@@ -4467,10 +4467,10 @@
 									"containerExtending": false,
 									"left": 1352,
 									"top": 384,
-									"width": 87.12255859375,
-									"height": 89,
+									"width": 106.0771484375,
+									"height": 111,
 									"autoResize": false,
-									"text": "\"file_id\" changed to \"fileshare_id\", \"file_id is a keyword",
+									"text": "\"file_id\" changed to \"fileshare_id\", \"file_name\" changed to \"fileshare_name\",  \"file_id\" and \"file_name\" are keywords",
 									"wordWrap": true
 								}
 							]
@@ -5121,7 +5121,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFaq1edZc9n/JE="
 									},
-									"name": "file_name",
+									"name": "fileshare_name",
 									"type": "VARCHAR",
 									"length": "255",
 									"primaryKey": false,
