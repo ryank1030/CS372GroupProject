@@ -1,0 +1,30 @@
+DB structure changelog
+
+14 Mar 2017:
+
+User Profile
+- changed Users table to reflect google sign in  and interface changes. 
+	- added google_id - : this is currently stored as VARCHAR(21) because google ids are too long to store as a BIGINT. You'll need to convert this when adding and pulling it from the database. Since this is problematic (and using google_id for everything is a little sketchy imo), i'm keeping user_id for our backend.
+	- added box_id - need to know the type specifics for this.
+	- added phone_number - currently 11 digits. Let me know if we want options for international phone numbers (probably not)
+Let me know what we want for the final user profile details, and whether or not the info from google sign in should be stored on our side.
+	- I still have slots for a user, first and last name. let me know how nessecary this is.
+	- added a slot for profile image url. Let me know if we're going to store any of this on our side or use google sign in every time.
+	- removed password, use credentials from google sign in.
+
+Image Files (profile)
+- removed completely, retrieve profile image from google sign in
+
+Group Profile
+- removed number_of_admins, do through query instead.
+- added group_description if we really want it.
+
+Chat
+- Chat table and chat_id was removed, use group_id as the key for Chat_Messges instead.
+
+Calendar
+- Calendar structure was changed so that the personal and group messges are now split into separate tables.  This was because having a calendar_id with 2 id's attatched to it was problematic and would have caused bloat down the line.
+- the Calendar table and calendar_id was removed, do event searches through the user_id and group_id.
+
+note on google_id
+I'll also need to know if this is going to be nessecary for the box id as well (or how the file API works in general.)
