@@ -1,5 +1,11 @@
 DB structure changelog
 
+15 Mar 2017:
+
+- fixed buildTables.sql, removeAllTables.sql
+
+
+
 14 Mar 2017:
 
 User Profile

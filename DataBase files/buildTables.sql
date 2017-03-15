@@ -70,7 +70,7 @@ CREATE TABLE Add_Users_Pending
 
 /* Chat Message entries */
 CREATE TABLE Chat_Messages
-(	message_id		INTEGER UNIQUE NOT NULL
+(	message_id		INTEGER UNIQUE NOT NULL,
 	group_id 		INTEGER NOT NULL,
 	user_id 		INTEGER,
 	
@@ -101,7 +101,7 @@ CREATE TABLE Personal_Calendar
 
 
 /* Group Calendar Entries */
-CREATE TABLE Event
+CREATE TABLE Group_Calendar
 (	event_id 			INTEGER UNIQUE NOT NULL,
 	group_id 			INTEGER NOT NULL,
 	user_id				INTEGER,
@@ -140,15 +140,16 @@ CREATE TABLE Files
 
 /* Group File information */
 CREATE TABLE Group_Files
-(	group_id			INTEGER NOT NULL
+(	group_id			INTEGER NOT NULL,
 	fileshare_id 		INTEGER NOT NULL,
 	modified_user_id 	INTEGER,
-	
+
 	FOREIGN KEY (group_id)
-		REFERENCES Groups (groups_id),
+		REFERENCES Groups (group_id),
 	FOREIGN KEY (fileshare_id)
 		REFERENCES Files (fileshare_id),
 	FOREIGN KEY (modified_user_id)
 		REFERENCES Users (user_id)
+		ON DELETE SET NULL
 ) ENGINE=INNODB;
 

@@ -3,7 +3,6 @@
 DROP TABLE Personal_Calendar;
 DROP TABLE Group_Calendar;
 DROP TABLE Chat_Messages;
-DROP TABLE Personal_Calendar;
 DROP TABLE Group_Files;
 DROP TABLE Files;
 DROP TABLE Add_Users_Pending;
