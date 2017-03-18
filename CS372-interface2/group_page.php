@@ -130,17 +130,134 @@
     <!-- Group Tabs -->
     <div class="row">
         <ul class="nav nav-tabs">
-            <li class="active"><a data-toggle="tab" href="#group-details">Group Details</a></li>
-            <li><a data-toggle="tab" href="#files-tab">Files</a></li>
-            <li><a data-toggle="tab" href="#calendar-tab">Calendar</a></li>
-            <li><a data-toggle="tab" href="#chat-tab">Chat</a></li>
+            <li class="active"><a data-toggle="tab" href="#group-details"><h4>Group Details</h4></a></li>
+            <li><a data-toggle="tab" href="#files-tab"><h4>Files</h4></a></li>
+            <li><a data-toggle="tab" href="#calendar-tab"><h4>Calendar</h4></a></li>
+            <li><a data-toggle="tab" href="#chat-tab"><h4>Chat</h4></a></li>
+            <li><a data-toggle="tab" href="#manage-tab"><h4>Group Management</h4></a></li>
         </ul>
         <div class="tab-content">
+                        
             
             <!-- Group Details -->
             <div id="group-details" class="tab-pane fade in active">
-                <h3>Group Details</h3>
-                <p>data</p>
+                <br>
+                <div class="panel panel-default">
+                    <div class="panel-heading">Group Name 1</div>
+                    <div class="panel-body"><p>The is a group project for CS 372 - Software Engineering</p></div>
+                </div>
+                
+                <div class="panel panel-default">
+                    <div class="panel-heading">Group Members</div>
+                    <div class="panel-body">
+                    
+                    <!-- User1 -->
+                    <div class="panel-group" id="accordion1">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h6 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse1">
+                                        User Name 1
+                                    </a> 
+                                </h6>
+                            </div>
+                            <div id="collapse1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p><i class="fa fa-envelope-o" aria-hidden="true"></i> username1@gmail.com</p>
+                                    <p><i class="fa fa-phone" aria-hidden="true"></i> 306-555-5555</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.User1 -->
+                    
+                    <!-- User2 -->
+                    <div class="panel-group" id="accordion2">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h6 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse2">
+                                        User Name 2
+                                    </a> 
+                                </h6>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p><i class="fa fa-envelope-o" aria-hidden="true"></i> username2@gmail.com</p>
+                                    <p><i class="fa fa-phone" aria-hidden="true"></i> 306-555-5555</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.User2 -->
+                    
+                    <!-- User3 -->
+                    <div class="panel-group" id="accordion3">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h6 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapse3">
+                                        User Name 3
+                                    </a> 
+                                </h6>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p><i class="fa fa-envelope-o" aria-hidden="true"></i> username3@gmail.com</p>
+                                    <p><i class="fa fa-phone" aria-hidden="true"></i> 306-555-5555</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.User3 -->
+                        
+                    
+                    <!-- Admin Leaders -->
+                    <!-- User4 -->
+                    <div class="panel-group" id="accordion4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h6 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapse4">
+                                        Admin Leader: User Name 4  
+                                    </a> 
+                                </h6>
+                            </div>
+                            <div id="collapse4" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p><i class="fa fa-envelope-o" aria-hidden="true"></i> username4@gmail.com</p>
+                                    <p><i class="fa fa-phone" aria-hidden="true"></i> 306-555-5555</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.User4 -->
+                            
+                    <!-- User5 -->
+                    <div class="panel-group" id="accordion5">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h6 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion5" href="#collapse5">
+                                        Admin Leader: User Name 5 
+                                    </a> 
+                                </h6>
+                            </div>
+                            <div id="collapse5" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p><i class="fa fa-envelope-o" aria-hidden="true"></i> username5@gmail.com</p>
+                                    <p><i class="fa fa-phone" aria-hidden="true"></i> 306-555-5555</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.User5 -->
+                    <!-- ./admin leaders -->
+                        
+                    </div>
+                </div>
+
             </div>
             <!--./ group details -->
             
@@ -165,8 +282,132 @@
             </div>
             <!-- ./group chat -->
             
+            <!-- Group Management -->
+            <div id="manage-tab" class="tab-pane fade">
+                
+                <br>
+                <!-- Add Member -->
+                <div class="panel-group" id="add-member-accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h6 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#add-member-accordion" href="#add-member-collapse">
+                                   Add Member
+                                </a> 
+                            </h6>
+                        </div>
+                        <div id="add-member-collapse" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <form action="">
+                                            <div class="form-group has-feedback">
+                                                <input type="text" class="form-control" name="search" id="search" placeholder="Search for user"/>
+                                                <button class="btn btn-info form-control-feedback"><i class="glyphicon glyphicon-search"></i></button>
+                                            </div>
+                                        </form>
+                                        <p id="user-search-results">
+                                            Will populate results based on search in the format:
+                                            Profile picture, First name, Last name, and then and add button
+                                        
+                                        </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.add member -->
+                    
+                
+                <!-- Add Admin Leader -->
+                <div class="panel-group" id="add-admin-accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h6 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#add-admin-accordion" href="#add-admin-collapse">
+                                   Add Admin Leader
+                                </a> 
+                            </h6>
+                        </div>
+                        <div id="add-admin-collapse" class="panel-collapse collapse">
+                            <div class="panel-body">
+                            
+                            <h5>User Name 1 <button class="btn btn-info btn-sm margin-left" type="button">Add Amin</button></h5>
+                            <h5>User Name 2 <button class="btn btn-info btn-sm margin-left" type="button">Add Amin</button></h5>  
+                            <h5>User Name 3 <button class="btn btn-info btn-sm margin-left" type="button">Add Amin</button></h5>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.add admin leader --> 
+                
+                
+                <!-- Remove Member -->
+                <div class="panel-group" id="remove-member-accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h6 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#remove-member-accordion" href="#remove-member-collapse">
+                                   Remove Member
+                                </a> 
+                            </h6>
+                        </div>
+                        <div id="remove-member-collapse" class="panel-collapse collapse">
+                            <div class="panel-body">
+
+                            <h5>User Name 1 <button class="btn btn-info btn-sm margin-left" type="button">Remove User</button></h5>
+                            <h5>User Name 2 <button class="btn btn-info btn-sm margin-left" type="button">Remove User</button></h5>  
+                            <h5>User Name 3 <button class="btn btn-info btn-sm margin-left" type="button">Remove User</button></h5>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.remove member -->
+                
+                
+                <!-- Review Requests -->
+                <div class="panel-group" id="review-accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h6 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#review-accordion" href="#review-collapse">
+                                   Review Requests
+                                </a> 
+                            </h6>
+                        </div>
+                        <div id="review-collapse" class="panel-collapse collapse">
+                            <div class="panel-body">
+
+                            <h5>User Name 6 
+                                <button class="btn btn-info btn-sm margin-left" type="button">Accept</button>
+                                <button class="btn btn-default btn-sm" type="button">Decline Request</button>
+                            </h5>
+                            <h5>User Name 7
+                                <button class="btn btn-info btn-sm margin-left" type="button">Accept</button>
+                                <button class="btn btn-default btn-sm" type="button">Decline Request</button>
+                            </h5>  
+                            
+
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.revew requests -->
+                
+                
+                
+                
+            </div>
+            <!-- ./group management -->
+            
         </div>
-    </div>
     </div>
     <!-- ./group tabs -->
 

@@ -10,7 +10,7 @@
     <meta name="author" content="">
     
     <!-- Google Sign-in Stuff-->
-    <meta name="google-signin-client_id" content="575498541884-dl7r3sns0rf1khmbe09sp7qqlml2rjrm.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="523585929304-fp80ad0078sf7r1kce0rabmu4qa0uh77.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 
     <title>Group Share</title>

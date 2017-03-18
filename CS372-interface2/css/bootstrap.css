@@ -3020,7 +3020,7 @@ select[multiple].input-lg {
           user-select: none;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 0px;
 }
 .btn:focus,
 .btn:active:focus,
@@ -6773,7 +6773,7 @@ button.close {
 
 .panel-heading .accordion-toggle.collapsed:after {
     /* symbol for "collapsed" panels */
-    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
 }
 
 .icon-notification-on {
@@ -6907,4 +6907,8 @@ g-signin2{
 }
 .center {
     text-align: center;
+}
+
+.tab{
+    margin-right: 10px;
 }

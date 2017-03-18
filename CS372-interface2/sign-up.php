@@ -116,14 +116,7 @@
                              
                              <p class="line-around white padding-top"> or </p>
                              <form class="form" role="form" method="post" action="homepage.php" accept-charset="UTF-8" id="signup-nav">
-                            <div class="input-group margin-bottom-20">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-user mycolor"></i></span>
-                                <input class="form-control" placeholder="Username" name="UserRegistration_username" id="UserRegistration_username" type="text">
-                            </div>
-                            <div class="input-group margin-bottom-20">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock mycolor"></i></span>
-                                <input class="form-control" placeholder="Password" name="UserRegistration_password" id="UserRegistration_password" type="password">
-                            </div>
+                            
                             <div class="input-group margin-bottom-20">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user mycolor"></i></span>
                                 <input class="form-control" placeholder="First Name" name="UserRegistration_fname" id="UserRegistration_fname" type="text">
@@ -133,12 +126,16 @@
                                 <input class="form-control" placeholder="Last Name" name="UserRegistration_lname" id="UserRegistration_lname" type="text">
                             </div>
                             <div class="input-group margin-bottom-20">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar mycolor"></i></span>
-                                <input class="form-control" placeholder="Date of Birth (dd/mm/yyyy)" name="UserRegistration_dob" id="UserRegistration_dob" type="text">
-                            </div>
-                            <div class="input-group margin-bottom-20">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-envelope mycolor"></i></span>
                                 <input class="form-control" placeholder="Email Address" name="UserRegistration_address" id="UserRegistration_address" type="text">
+                            </div>
+                            <div class="input-group margin-bottom-20">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock mycolor"></i></span>
+                                <input class="form-control" placeholder="Password" name="UserRegistration_password" id="UserRegistration_password" type="password">
+                            </div>
+                            <div class="input-group margin-bottom-20">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar mycolor"></i></span>
+                                <input class="form-control" placeholder="Date of Birth (dd/mm/yyyy)" name="UserRegistration_dob" id="UserRegistration_dob" type="text">
                             </div>
                             <div class="input-group margin-bottom-20">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-phone mycolor"></i></span>
