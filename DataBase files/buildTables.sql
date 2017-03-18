@@ -17,7 +17,6 @@ CREATE TABLE User_Images
 CREATE TABLE Users
 (	user_id 		INTEGER UNIQUE NOT NULL,
 	google_id		VARCHAR(21) UNIQUE,
-	box_id			INTEGER NOT NULL,
 	email 			VARCHAR(254) UNIQUE NOT NULL,
 	image_id		INTEGER,
 	password		VARCHAR(20),
@@ -88,6 +87,8 @@ CREATE TABLE Chat_Messages
 (	message_id		INTEGER UNIQUE NOT NULL,
 	group_id 		INTEGER NOT NULL,
 	user_id 		INTEGER,
+	date_created	DATETIME NOT NULL,
+	message_contents VARCHAR(5000),
 	
 	PRIMARY KEY (message_id),
 	FOREIGN KEY (group_id)
