@@ -128,16 +128,66 @@
             <h2>Create New Group</h2>      
         </div>
         </div>
-        
+        <div class="row">
         <form class="form-horizontal col-lg-9" role="form">
             <div class="form-group">
-              <label for="fname">Group Name:</label>
-              <input type="text" class="form-control" id="gname" />
+                <Label>Group Name:</Label>
+                <input type="text" class="form-control" id="gname" />
+            </div>
+            <div class="form-group">
+                <label>Group Description:</label>
+                <textarea class="form-control" id="gdesc" ></textarea>
             </div>
             
-            <button class="btn btn-info btn-xl v" type="submit">Sign Up</button>
         </form>
-        
+        <div class="col-lg-10">
+            <div class="col-lg-10 col-offset-sm-l"><label>Group Members:</label></div>
+
+            <!-- search for users to add -->
+            <div class="dual-list list-left col-md-5">
+                <div class="well text-right">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="input-group">
+                                <input type="text" name="SearchDualList" class="form-control" placeholder="Search for users" />
+                                <span class="input-group-btn">
+                                    <button class="btn btn-info" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                </span>
+                            </div>
+                        </div>  
+                        
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">User Name 1</li>
+                        <li class="list-group-item">User Name 2</li>
+                        <li class="list-group-item">User Name 3</li>
+                        <li class="list-group-item">User Name 4</li>
+                        <li class="list-group-item">User Name 5</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- arrow to move users over -->
+            <div class="list-arrows col-md-1 text-center">
+                <button class="btn btn-default btn-sm move-right">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </button>
+            </div>
+
+            <!-- List users are being added to -->
+            <div class="dual-list list-right col-md-5">
+                <div class="well">
+                    <ul class="list-group" id="add-member-list">
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <div class="row">
+            <br/>
+            <button class="btn btn-info btn-xl center-block" type="submit">Create Group</button>
+        </div>    
     </div> 
     <!-- container -->
     
@@ -146,6 +196,9 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/custominterface.js"></script>
 
 </body>
 

@@ -314,20 +314,55 @@
                         <div id="add-member-collapse" class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div class="row">
-                                    <div class="col-md-5">
-                                        <form action="">
-                                            <div class="form-group has-feedback">
-                                                <input type="text" class="form-control" name="search" id="search" placeholder="Search for user"/>
-                                                <button class="btn btn-info form-control-feedback"><i class="glyphicon glyphicon-search"></i></button>
+
+                                    <!-- Add Member dual list -->
+                                    <div class="dual-list list-left col-md-5">
+                                        <div class="well text-right">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="input-group">
+                                                        <input type="text" name="SearchDualList" class="form-control" placeholder="Search for users" />
+                                                        <span class="input-group-btn">
+                                                            <button class="btn btn-info" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                        </span>
+                                                    </div>
+                                                </div>  
+
                                             </div>
-                                        </form>
-                                        <p id="user-search-results">
-                                            Will populate results based on search in the format:
-                                            Profile picture, First name, Last name, and then and add button
-                                        
-                                        </p>
-                                     </div>
+                                            <ul class="list-group">
+                                                <li class="list-group-item">User Name 1</li>
+                                                <li class="list-group-item">User Name 2</li>
+                                                <li class="list-group-item">User Name 3</li>
+                                                <li class="list-group-item">User Name 4</li>
+                                                <li class="list-group-item">User Name 5</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- arrow to move users over -->
+                                    <div class="list-arrows col-md-1 text-center">
+                                        <button class="btn btn-default btn-sm move-right">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                        </button>
+                                    </div>
+
+                                    <!-- List users are being added to -->
+                                    <div class="dual-list list-right col-md-5">
+                                        <div class="well">
+                                            <ul class="list-group" id="add-member-list">
+                                            </ul>
+                                        </div>
+                                    </div>    
+                                    
                                 </div>
+                            
+                                <!-- add members button -->
+                                <div class="row">
+                                    <br/>
+                                    <button class="btn btn-info btn-xl center-block">Add Members</button>
+                                </div>
+                                <!-- ./ add member dual list -->
+                                
                             </div>                       
                         </div>
                     </div>

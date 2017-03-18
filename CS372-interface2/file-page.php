@@ -122,7 +122,7 @@
     <div class="container">
         <div class="row">
         <div class="page-header">
-            <h2><!--<img src="img/img.png" class="img-circle" alt="Profile Picture" width="70" height="70">--> Private Files</h2>      
+            <h2> Private Files</h2>      
         </div>
         </div>
     </div>               

@@ -122,7 +122,7 @@
         <!-- Page Header -->
         <div class="row">
         <div class="page-header">
-            <h2><!--<img src="img/img.png" class="img-circle" alt="Profile Picture" width="70" height="70"> -->Profile</h2>      
+            <h2>Profile</h2>      
         </div>
         </div>
         <!-- ./page header -->

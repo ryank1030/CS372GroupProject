@@ -136,7 +136,7 @@
                 <div class="panel-heading"><h4><i class="fa fa-users" aria-hidden="true"></i> Groups</h4></div>
                 <div class="panel-body">
                     
-                    <p><button class="btn btn-info btn-sm" type="button"> Create New Group</button></p>
+                    <p><a href="new-group.php"><button class="btn btn-info btn-sm" type="button"> Create New Group</button></a></p>
                     
                     <!-- Group1 -->
                     <div class="panel-group" id="accordion1">
