@@ -9,3 +9,4 @@ DROP TABLE Add_Users_Pending;
 DROP TABLE Group_Users;
 DROP TABLE Groups;
 DROP TABLE Users;
+DROP TABLE User_Images;
