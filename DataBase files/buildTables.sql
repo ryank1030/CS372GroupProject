@@ -19,7 +19,7 @@ CREATE TABLE Users
 	google_id		VARCHAR(21) UNIQUE NOT NULL,
 	box_id			INTEGER NOT NULL,
 	email 			VARCHAR(254) UNIQUE NOT NULL,
-	image_id		INTEGER UNIQUE,
+	image_id		INTEGER,
 	password		VARCHAR(20),
 	first_name		VARCHAR(40) NOT NULL,
 	last_name		VARCHAR(40) NOT NULL,

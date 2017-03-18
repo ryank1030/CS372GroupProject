@@ -4380,7 +4380,7 @@
 										"$ref": "AAAAAAFa4f7dEIaNG1w="
 									},
 									"nullable": true,
-									"unique": true
+									"unique": false
 								},
 								{
 									"_type": "ERDColumn",
