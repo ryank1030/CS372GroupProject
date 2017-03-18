@@ -152,12 +152,12 @@
                                 <div class="panel-body">
                                     
                                     <p><a href="group_page.php"><i class="fa fa-users" aria-hidden="true"></i>  Group Details</a></p>
-                                    <p><a target="_blank" href="group_page.php"><i class="fa fa-folder" aria-hidden="true"></i>  Files</a> </p>
-                                    <p><a href="group_page.php"><i class="fa fa-calendar" aria-hidden="true"></i>  Calendar</a></p>
-                                    <p><a href="group_page.php"><i class="fa fa-comment" aria-hidden="true"></i>  Chat</a></p>
+                                    <p><a  href="group_page.php#files"><i class="fa fa-folder" aria-hidden="true"></i>  Files</a> </p>
+                                    <p><a href="group_page.php#calendar"><i class="fa fa-calendar" aria-hidden="true"></i>  Calendar</a></p>
+                                    <p><a href="group_page.php#chat"><i class="fa fa-comment" aria-hidden="true"></i>  Chat</a></p>
                                     <hr />
                                     <div class="dropdown">
-                                        <a href="">Group Management</a>
+                                        <a href="group_page.php#manage">Group Management</a>
                                         <a class="dropdown-toggle" data-toggle="dropdown">
                                             <span><i class="fa fa-caret-down fa-lg" aria-hidden="true"></i></span></a>
                                             <ul class="dropdown-menu">
@@ -189,21 +189,22 @@
                                      
                                     <p><a href="group_page.php"><i class="fa fa-users" aria-hidden="true"></i>  
                                         Group Details</a></p>
-                                    <p><a target="_blank" href="group_page.php"><i class="fa fa-folder" aria-hidden="true"></i>        Files  <span class="badge badge-notify ">2</span></a></p>
-                                    <p><a href="group_page.php"><i class="fa fa-calendar" aria-hidden="true"></i>  
+                                    <p><a href="group_page.php#files"><i class="fa fa-folder" aria-hidden="true"></i>
+                                        Files  <span class="badge badge-notify ">2</span></a></p>
+                                    <p><a href="group_page.php#calendar"><i class="fa fa-calendar" aria-hidden="true"></i>  
                                         Calendar <span class="badge badge-notify ">1</span></a></p>
-                                    <p><a href="group_page.php"><i class="fa fa-comment" aria-hidden="true"></i>  
+                                    <p><a href="group_page.php#chat"><i class="fa fa-comment" aria-hidden="true"></i>  
                                         Chat  <span class="badge badge-notify ">3</span></a></p>
                                     <hr />
                                     <div class="dropdown">
-                                        <a href="">Group Management</a>
+                                        <a href="group_page.php#manage">Group Management</a>
                                         <a class="dropdown-toggle" data-toggle="dropdown">
                                             <span><i class="fa fa-caret-down fa-lg" aria-hidden="true"></i></span></a>
                                             <ul class="dropdown-menu">
-                                                <li><a href="#">Add Member</a></li>
-                                                <li><a href="#">Delete Member</a></li>
-                                                <li><a href="#">Assign an Admin</a></li>
-                                                <li><a href="#">Review Requests  
+                                                <li><a href="group_page.php#manage">Add Member</a></li>
+                                                <li><a href="group_page.php#manage">Delete Member</a></li>
+                                                <li><a href="group_page.php#manage">Assign an Admin</a></li>
+                                                <li><a href="group_page.php#manage">Review Requests  
                                                     <span class="badge badge-notify">1</span></a></li>
                                             </ul>
                                         <span class="badge badge-notify ">1</span>
@@ -227,9 +228,9 @@
                             <div id="collapse3" class="panel-collapse collapse in">
                                 <div class="panel-body">
                                     <p><a href="group_page.php"><i class="fa fa-users" aria-hidden="true"></i>  Group Details</a></p>
-                                    <p><a target="_blank" href="group_page.php"><i class="fa fa-folder" aria-hidden="true"></i>  Files</a></p>
-                                    <p><a href="group_page.php"><i class="fa fa-calendar" aria-hidden="true"></i>  Calendar</a></p>
-                                    <p><a href="group_page.php"><i class="fa fa-comment" aria-hidden="true"></i>  Chat</a></p>
+                                    <p><a href="group_page.php#files"><i class="fa fa-folder" aria-hidden="true"></i>  Files</a></p>
+                                    <p><a href="group_page.php#calendar"><i class="fa fa-calendar" aria-hidden="true"></i>  Calendar</a></p>
+                                    <p><a href="group_page.php#chat"><i class="fa fa-comment" aria-hidden="true"></i>  Chat</a></p>
 
                                 </div>
                             </div>
@@ -341,7 +342,6 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    
     
 </body>
 

@@ -122,7 +122,13 @@
     <div class="container">
         <div class="row">
         <div class="page-header">
-            <h2><!--<img src="img/img.png" class="img-circle" alt="Profile Picture" width="70" height="70">-->  Group Name</h2>      
+            <h2>Group Name 
+                
+            <!-- Leave Group -->
+            <a href="homepage.php"><button class="btn btn-info pull-right">Leave Group</button></a>
+            <!-- ./leave group -->
+    
+            </h2>
         </div>
         </div>  
     <!-- ./page header -->
@@ -142,11 +148,15 @@
             <!-- Group Details -->
             <div id="group-details" class="tab-pane fade in active">
                 <br>
+                
+                <!-- Group name and description -->
                 <div class="panel panel-default">
                     <div class="panel-heading">Group Name 1</div>
                     <div class="panel-body"><p>The is a group project for CS 372 - Software Engineering</p></div>
                 </div>
+                <!-- ./group name description -->
                 
+                <!-- Group Members -->
                 <div class="panel panel-default">
                     <div class="panel-heading">Group Members</div>
                     <div class="panel-body">
@@ -254,31 +264,36 @@
                     </div>
                     <!-- /.User5 -->
                     <!-- ./admin leaders -->
-                        
+                          
                     </div>
                 </div>
-
+                <!-- ./group members -->
+                
+                
             </div>
             <!--./ group details -->
             
             <!-- Group Files  -->
             <div id="files-tab" class="tab-pane fade">
-                <h3>Files</h3>
-                <p>data</p>
+                
+                <!-- ENTER FILE STUFF HERE -->
+                
             </div>
             <!-- ./group files -->
             
             <!-- Group Calendar -->
             <div id="calendar-tab" class="tab-pane fade">
-                <h3>Calendar</h3>
-                <p>data</p>
+                
+                <!-- ENTER CALENDAR STUFF HERE -->
+                
             </div>
             <!-- ./group calendar -->
             
             <!-- Group Chat -->
             <div id="chat-tab" class="tab-pane fade">
-                <h3>Chat</h3>
-                <p>data</p>
+                
+                <!-- ENTER CHAT STUFF HERE -->
+                
             </div>
             <!-- ./group chat -->
             
@@ -296,7 +311,7 @@
                                 </a> 
                             </h6>
                         </div>
-                        <div id="add-member-collapse" class="panel-collapse collapse in">
+                        <div id="add-member-collapse" class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div class="row">
                                     <div class="col-md-5">
@@ -311,11 +326,9 @@
                                             Profile picture, First name, Last name, and then and add button
                                         
                                         </p>
-                                        </div>
-                                    </div>
+                                     </div>
                                 </div>
-                                                               
-                            </div>
+                            </div>                       
                         </div>
                     </div>
                 </div>
@@ -391,27 +404,22 @@
                                 <button class="btn btn-info btn-sm margin-left" type="button">Accept</button>
                                 <button class="btn btn-default btn-sm" type="button">Decline Request</button>
                             </h5>  
-                            
-
-                                
-                                
+                                                                                        
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- /.revew requests -->
-                
-                
-                
-                
+
             </div>
             <!-- ./group management -->
             
+            
+            </div>
+            <!-- ./group tabs -->
         </div>
-    </div>
-    <!-- ./group tabs -->
-
-    
+        <!-- ./row -->
+    </div> 
     <!-- /.container -->
     
 
@@ -420,6 +428,9 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/custominterface.js"></script>
 
 </body>
 
