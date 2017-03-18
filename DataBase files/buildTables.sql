@@ -16,7 +16,7 @@ CREATE TABLE User_Images
 /* User profiles and login credentials */
 CREATE TABLE Users
 (	user_id 		INTEGER UNIQUE NOT NULL,
-	google_id		VARCHAR(21) UNIQUE NOT NULL,
+	google_id		VARCHAR(21) UNIQUE,
 	box_id			INTEGER NOT NULL,
 	email 			VARCHAR(254) UNIQUE NOT NULL,
 	image_id		INTEGER,

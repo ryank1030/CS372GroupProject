@@ -4335,7 +4335,7 @@
 									"length": "21",
 									"primaryKey": false,
 									"foreignKey": false,
-									"nullable": false,
+									"nullable": true,
 									"unique": true
 								},
 								{
