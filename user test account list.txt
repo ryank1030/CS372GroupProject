@@ -2,3 +2,4 @@ email, password, first name, last name, googleID, boxID
 
 testersont20@gmail.com, testpass1, Testy, Testerson		
 tasha.test.cs372@gmail.com, tashatestcs372, tasha, test, 575498541884-dl7r3sns0rf1khmbe09sp7qqlml2rjrm.apps.googleusercontent.com	
+pizzaman10039@yahoo.com, CS372GroupProject, Robert, Khoo, N/A, N/A
