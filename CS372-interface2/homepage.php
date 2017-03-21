@@ -161,9 +161,9 @@
                                         <a class="dropdown-toggle" data-toggle="dropdown">
                                             <span><i class="fa fa-caret-down fa-lg" aria-hidden="true"></i></span></a>
                                             <ul class="dropdown-menu">
-                                                <li><a href="#">Add Member</a></li>
-                                                <li><a href="#">Delete Member</a></li>
-                                                <li><a href="#">Assign an Admin</a></li>
+                                                <li><a href="group_page.php#manage#add-member-collapse">Add Member</a></li>
+                                                <li><a href="group_page.php#manage#remove-member-collapse">Delete Member</a></li>
+                                                <li><a href="group_page.php#manage#add-admin-collapse">Assign an Admin</a></li>
                                                 <li class="disabled"><a href="#">Review Requests</a></li>
                                             </ul>
                                     </div>
