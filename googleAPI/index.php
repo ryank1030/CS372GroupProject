@@ -108,6 +108,7 @@ $eventID = $_POST["eventID"];
 </form>
 <form action="index.php" method="post">
    <fieldset>
+    <legend>Calendar Delete Entry:</legend>
     EventID (NEEDED use list to find): <br>
     <input type="text" name="eventID">
     <br><br>
