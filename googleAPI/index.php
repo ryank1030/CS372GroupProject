@@ -106,9 +106,6 @@ $eventID = $_POST["eventID"];
     <input type="submit" value="Edit" name="editButton">
   </fieldset>
 </form>
-<form action="signin-listEvent.php" method="post">
-    <input type="submit" value="List" name="listButton">
-</form>
 <form action="index.php" method="post">
    <fieldset>
     EventID (NEEDED use list to find): <br>
@@ -117,6 +114,10 @@ $eventID = $_POST["eventID"];
     <input type="submit" value="Delete" name="deleteButton">
    </fieldset>
 </form>
+<form action="signin-listEvent.php" method="post">
+    <input type="submit" value="List" name="listButton">
+</form>
+
 
 <?php
 echo "<h2>Your Input:</h2>";
