@@ -32,6 +32,14 @@ if (isset($_POST['editButton']) && $_POST['editButton'] && isset($_POST['eventID
     header('Location: ' . $redirect);
 }
 
+if (isset($_POST['deleteButton']) && $_POST['deleteButton'] && isset($_POST['eventID']) && $_POST['eventID'])
+{
+    //we want to edit the event
+    $_SESSION['eventID'] = $_POST['eventID'];
+    $redirect = "signin-deleteEvent.php";
+    header('Location: ' . $redirect);
+}
+
 if (isset($_POST["StartDate"]) && $_POST["StartDate"] && isset($_POST["EndDate"]) && $_POST["EndDate"] && isset($_POST["Summary"]) && $_POST["Summary"] && isset($_POST['addButton']) && $_POST['addButton'])
 {
     //we have enough values to make an event
@@ -100,6 +108,14 @@ $eventID = $_POST["eventID"];
 </form>
 <form action="signin-listEvent.php" method="post">
     <input type="submit" value="List" name="listButton">
+</form>
+<form action="index.php" method="post">
+   <fieldset>
+    EventID (NEEDED use list to find): <br>
+    <input type="text" name="eventID">
+    <br><br>
+    <input type="submit" value="Delete" name="deleteButton">
+   </fieldset>
 </form>
 
 <?php
