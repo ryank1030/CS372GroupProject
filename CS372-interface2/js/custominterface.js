@@ -2,6 +2,9 @@
 var url = document.location.toString();
 if (url.match('#')) {
     $('.nav-tabs a[href="#' + url.split('#')[1] + '-tab"]').tab('show');
+    if(url.split('#')[2]){
+    document.getElementById(url.split('#')[2]).className = "panel-collapse collapse in";
+    }
 } //add a suffix
 
 // Change hash for page-reload
