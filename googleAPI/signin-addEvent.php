@@ -14,7 +14,6 @@ if (isset($_SESSION['access_token']) && $_SESSION['access_token']) { //we have o
   $calendar = new Google_Service_Calendar($client);  //create a new calendar service
     
   /*Edit in here*/
-  $events = $calendar->events->listEvents('primary');  //get all the events from (<calendarId>)
 
     $event = new Google_Service_Calendar_Event(array( //create our event
       'summary' => $_SESSION['Summary'],
