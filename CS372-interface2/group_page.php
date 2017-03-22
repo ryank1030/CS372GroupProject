@@ -1,3 +1,32 @@
+<?php
+session_start();
+
+//create calendar entry
+if (isset($_POST["StartDate"]) && $_POST["StartDate"] && isset($_POST["EndDate"]) && $_POST["EndDate"] && isset($_POST["Summary"]) && $_POST["Summary"] && isset($_POST['addButton']) && $_POST['addButton'])
+{
+    //we have enough values to make an event
+    $_SESSION['StartDate'] = $_POST["StartDate"];
+    $_SESSION['EndDate'] = $_POST["EndDate"];
+    $_SESSION['Summary'] = $_POST["Summary"];
+    $_SESSION['Description'] = $_POST["Description"];
+    $redirect = "signin-addEvent.php";
+    header('Location: ' . $redirect);
+}
+else
+{
+ //remove our session variables
+    unset($_SESSION['StartDate']);
+    unset($_SESSION['EndDate']);
+    unset($_SESSION['Summary']);
+    unset($_SESSION['Description']);
+}
+
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +39,7 @@
     <meta name="author" content="">
     
     <!-- Google Sign-in Stuff-->
-    <meta name="google-signin-client_id" content="523585929304-fp80ad0078sf7r1kce0rabmu4qa0uh77.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="575498541884-dl7r3sns0rf1khmbe09sp7qqlml2rjrm.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 
     <title>Group Share</title>
@@ -285,6 +314,34 @@
             <div id="calendar-tab" class="tab-pane fade">
                 
                 <!-- ENTER CALENDAR STUFF HERE -->
+                
+                <br />
+                <form action="group_page.php#calendar" method="post">
+                    <div class="form-group">
+                        <label>Start Date:</label>
+                        <input type="text" name="StartDate">
+                    </div>
+                    <div class="form-group">
+                        <label>End Date:</label>
+                        <input type="text" name="EndDate">
+                     </div>
+                    <div class="form-group">                   
+                        <label>Summary:</label>
+                        <input type="text" name="Summary">
+                    </div>
+                    <div class="form-group">
+                        <label>Description:</label>
+                        <textarea name="Description"></textarea>
+                    </div>
+                    
+                    <div class="row">
+                        <input type="submit" class="btn btn-info" name="addButton" value="Create Event">
+                    </div>
+                
+                </form>
+                
+                
+                
                 
             </div>
             <!-- ./group calendar -->
