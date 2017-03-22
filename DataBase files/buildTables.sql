@@ -2,15 +2,7 @@
 
 /* ------------USER TABLES----------------- */
 
-/*user profile pics */
-CREATE TABLE User_Images
-(	image_id 		INTEGER UNIQUE NOT NULL,
-	image_url		VARCHAR(2083),
-	image_name		VARCHAR(250) UNIQUE NOT NULL,
-	image_extension	VARCHAR(5) NOT NULL,
-	
-	PRIMARY KEY (image_id)
-) ENGINE=INNODB;
+
 
 
 /* User profiles and login credentials */
@@ -18,7 +10,7 @@ CREATE TABLE Users
 (	user_id 		INTEGER UNIQUE NOT NULL,
 	google_id		VARCHAR(21) UNIQUE,
 	email 			VARCHAR(254) UNIQUE NOT NULL,
-	image_id		INTEGER,
+	image_url		VARCHAR(2083),
 	password		VARCHAR(20),
 	first_name		VARCHAR(40) NOT NULL,
 	last_name		VARCHAR(40) NOT NULL,
@@ -26,11 +18,7 @@ CREATE TABLE Users
 	phone_number	INTEGER(11),
 	last_login		DATETIME,
 	
-	PRIMARY KEY (user_id),
-	FOREIGN KEY (image_id) 
-		REFERENCES User_Images (image_id)
-		ON DELETE SET NULL
-	
+	PRIMARY KEY (user_id)
 ) ENGINE=INNODB;
 
 
