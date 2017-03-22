@@ -28,7 +28,7 @@ if (isset($_SESSION['access_token']) && $_SESSION['access_token']) { //we have o
     $calendarId = 'primary';  //what calendar would you like to add too
     $event = $calendar->events->insert($calendarId, $event); //add the event to our calendar
     $_SESSION['createdEvent'] = 'Event created: ' . $event->htmlLink;
-    $redirect = "group_page#calendar.php";
+    $redirect = "group_page.php#calendar";
     header('Location: ' . $redirect);
     
    /*Edit in here*/  
