@@ -1,20 +1,6 @@
 /* test account table filler */
 
 
-/* user image test list */
-/* format:
-
-
-INSERT INTO User_Images (image_id, image_url, image_name, image_extension)
-	VALUES (<int>, <string>, <string>, <string>);
-
-*/
-
-INSERT INTO User_Images (image_id, image_url, image_name, image_extension)
-	VALUES ('0', 'https://www.dropbox.com/s/k4gq3e364xy8r1b/default.png?dl=0', 'default', 'png');
-
-INSERT INTO User_Images (image_id, image_url, image_name, image_extension)
-	VALUES ('1', 'https://www.dropbox.com/s/pu96jl3gehay79x/usertestavatar.png?dl=0', 'avatartest', 'png');
 
 	
 	
@@ -27,16 +13,16 @@ INSERT INTO Users (user_id, google_id, image_id, email, password, first_name, la
 
 /* ### these googleIDsare fake and won't authenticate*/
 
-INSERT INTO Users (user_id, google_id, image_id, email, password, first_name, last_name, birth_date, phone_number, last_login) VALUES ('0', '0000000000000000000', '0', 'blank@blank.com', 'empty', 'empty', 'empty', CURDATE(), '00000000000', NOW());
+INSERT INTO Users (user_id, google_id, image_id, email, password, first_name, last_name, birth_date, phone_number, last_login, image_url) VALUES ('0', '0000000000000000000', '0', 'blank@blank.com', 'empty', 'empty', 'empty', CURDATE(), '00000000000', NOW(), '' );
 
-INSERT INTO Users (user_id, google_id, image_id, email, password, first_name, last_name, birth_date, phone_number, last_login)
-	VALUES ( '1', '00000000000000000001', '1', 'testersont20@gmail.com', 'testguy', ' Testy', 'Testerson', '1999-12-24', '12345678901', NOW());
+INSERT INTO Users (user_id, google_id, image_id, email, password, first_name, last_name, birth_date, phone_number, last_login, image_url)
+	VALUES ( '1', '00000000000000000001', '1', 'testersont20@gmail.com', 'testguy', ' Testy', 'Testerson', '1999-12-24', '12345678901', NOW(), '');
 
-INSERT INTO Users (user_id, google_id, image_id, email, password, first_name, last_name, birth_date, phone_number, last_login)
-	VALUES ( '2', '00000000000000000002', '1', 'tasha.test.cs372@gmail.com', '', 'Tasha', 'Baller', '1988-02-29','575498541884', '2017-02-28 17:25:03');
+INSERT INTO Users (user_id, google_id, image_id, email, password, first_name, last_name, birth_date, phone_number, last_login, image_url)
+	VALUES ( '2', '00000000000000000002', '1', 'tasha.test.cs372@gmail.com', '', 'Tasha', 'Baller', '1988-02-29','575498541884', '2017-02-28 17:25:03', '');
 	
-INSERT INTO Users (user_id, google_id, image_id, email, password, first_name, last_name, birth_date, phone_number, last_login)
-	VALUES ( '3', '00000000000000000003', '1', 'pizzaman10039@yahoo.com', 'CS372GroupProject', 'Robert', 'Khoo', '2006-10-31','09876543210', '2015-05-18 03:55:11');
+INSERT INTO Users (user_id, google_id, image_id, email, password, first_name, last_name, birth_date, phone_number, last_login, image_url)
+	VALUES ( '3', '00000000000000000003', '1', 'pizzaman10039@yahoo.com', 'CS372GroupProject', 'Robert', 'Khoo', '2006-10-31','09876543210', '2015-05-18 03:55:11', '');
 
 	
 	
