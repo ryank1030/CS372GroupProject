@@ -43,7 +43,7 @@ else
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 
     <title>Group Share</title>
-
+    
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
     
@@ -314,33 +314,53 @@ else
             <div id="calendar-tab" class="tab-pane fade">
                 
                 <!-- ENTER CALENDAR STUFF HERE -->
-                
                 <br />
-                <form action="group_page.php#calendar" method="post">
-                    <div class="form-group">
-                        <label>Start Date:</label>
-                        <input type="text" name="StartDate">
-                    </div>
-                    <div class="form-group">
-                        <label>End Date:</label>
-                        <input type="text" name="EndDate">
-                     </div>
-                    <div class="form-group">                   
-                        <label>Summary:</label>
-                        <input type="text" name="Summary">
-                    </div>
-                    <div class="form-group">
-                        <label>Description:</label>
-                        <textarea name="Description"></textarea>
+                <div class="row">
+                    
+                    <!-- Create New Event -->
+                    <div class="col-lg-3">
+                        <div class="panel panel-default">
+                            <div class="panel-heading"><h5>Create New Event</h5></div>
+                            <div class="panel-body">
+                                <form action="group_page.php#calendar" method="post">
+
+                                    <div class="input-group">
+                                        <label>Start Date:</label>
+                                        <input type="text" class="form-control" name="StartDate">
+                                    </div>
+
+                                    <div class="input-group">
+                                        <label>End Date:</label>
+                                        <input type="text" class="form-control" name="EndDate">
+                                    </div>
+
+                                    <div class="input-group">                
+                                        <label>Summary:</label>
+                                        <input type="text" class="form-control" name="Summary">
+                                    </div>
+
+                                    <div class="input-group">
+                                        <label>Description:</label>
+                                        <textarea name="Description" class="form-control"></textarea>
+                                    </div>
+                                    <br/>
+                                    <input type="submit" class="btn btn-info" name="addButton" value="Create Event">
+
+                                </form>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="row">
-                        <input type="submit" class="btn btn-info" name="addButton" value="Create Event">
+                    
+                    <!-- Calendar -->
+                    <div class="col-md-9">
+                        <div class="well">
+                        
+                        </div> 
                     </div>
-                
-                </form>
-                
-                
+                    
+                    
+                    
                 
                 
             </div>
@@ -523,6 +543,32 @@ else
     
     <!-- Custom JavaScript -->
     <script src="js/custominterface.js"></script>
+    
+    
+    <!-- Date Picker Scripts -->
+    <script type="text/javascript"
+     src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+    </script> 
+    <script type="text/javascript"
+     src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">
+    </script>
+    <script type="text/javascript"
+     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
+    </script>
+    <script type="text/javascript"
+     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">
+    </script>
+    <script type="text/javascript">
+      $('#datetimepicker1').datetimepicker({
+        format: 'yyyy/MM/dd hh:mm:ss',
+      });
+      $('#datetimepicker2').datetimepicker({
+        format: 'yyyy/MM/dd hh:mm:ss',
+      });
+        
+    </script>
+    
+    
 
 </body>
 
