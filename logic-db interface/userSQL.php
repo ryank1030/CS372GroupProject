@@ -27,8 +27,6 @@
 */
 
 
-
-
 class UserSQL
 {
 	//init default user (do not use for an actual account)
@@ -60,7 +58,19 @@ class UserSQL
 	}
 
 
-	// get user details from userID
+	// get all user details from userID
+	/* Row Indexes:
+		0 = user_id
+		1 = google_id
+		2 = email
+		3 = image_url
+		4 = password (depreciated?)
+		5 = first_name
+		6 = last name
+		7 = birth_date
+		8 = phone
+		9 = last_login
+	*/
 	public function get_user($userID)
 	{
 		return "SELECT * FROM Users WHERE user_id = '$userID'";
@@ -112,7 +122,7 @@ class UserSQL
 	// updates a user's account
 	public function update_user($userID, $email_in, $first_name_in, $last_name_in, $dob_in, $image_url_in, $phone_in)
 	{
-		return "UPDATE Users SET email = '$email_in', first_name = '$first_name_in', last_name = '$last_name_in', birth_date = '$dob_in', image_url = '$image_url_in', phone = '$phone_in' WHERE user_ID = '$userID'";
+		return "UPDATE Users SET email = '$email_in', first_name = '$first_name_in', last_name = '$last_name_in', birth_date = '$dob_in', image_url = '$image_url_in', phone_number = '$phone_in' WHERE user_ID = '$userID'";
 	}
 	
 	
@@ -129,7 +139,7 @@ class UserSQL
 	// Use this for cases where you need to list a bunch of users, but don't need more complicated  or hidden details like passwords, etc.
 	public function get_user_basic($userID)
 	{
-		return "SELECT email, first_name, last_name, image_url, phone, last_login FROM Users WHERE user_id = '$userID'";
+		return "SELECT email, first_name, last_name, image_url, phone_number, last_login FROM Users WHERE user_id = '$userID'";
 	}
 	
 	

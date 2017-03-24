@@ -6,37 +6,33 @@
 	
 /* user account test list */
 /* format: 
-INSERT INTO Users (user_id, google_id, image_id, email, password, first_name, last_name, birth_date, phone_number, last_login)
-	VALUES ( <userID int>, <googleID string(21)>, <image_id INT>, <email (string)>, <password (string(20))> , <firstname (string)>, <lastname (string)>, <birth_date DATE>, <phone number (int(11))>, <DATETIME>);
+INSERT INTO Users (user_id, google_id, email, password, first_name, last_name, birth_date, phone_number, last_login, image_url) VALUES ( <userID int>, <googleID string(21)>,  <email (string)>, <password (string(20))> , <firstname (string)>, <lastname (string)>, <birth_date DATE>, <phone number (int(11))>, <DATETIME> <image_url INT>);
 	
 */
 
 /* ### these googleIDsare fake and won't authenticate*/
 
-INSERT INTO Users (user_id, google_id, image_id, email, password, first_name, last_name, birth_date, phone_number, last_login, image_url) VALUES ('0', '0000000000000000000', '0', 'blank@blank.com', 'empty', 'empty', 'empty', CURDATE(), '00000000000', NOW(), '' );
+INSERT INTO Users (user_id, google_id, email, password, first_name, last_name, birth_date, phone_number, last_login, image_url) VALUES ('0', '0000000000000000000', 'blank@blank.com', 'empty', 'empty', 'empty', CURDATE(), '00000000000', NOW(), 'https://www.dropbox.com/s/k4gq3e364xy8r1b/default.png?dl=0' );
 
-INSERT INTO Users (user_id, google_id, image_id, email, password, first_name, last_name, birth_date, phone_number, last_login, image_url)
-	VALUES ( '1', '00000000000000000001', '1', 'testersont20@gmail.com', 'testguy', ' Testy', 'Testerson', '1999-12-24', '12345678901', NOW(), '');
+INSERT INTO Users (user_id, google_id, email, password, first_name, last_name, birth_date, phone_number, last_login, image_url) VALUES ( '1', '00000000000000000001', 'testersont20@gmail.com', 'testguy', ' Testy', 'Testerson', '1999-12-24', '12345678901', NOW(), 'https://www.dropbox.com/s/pu96jl3gehay79x/usertestavatar.png?dl=0');
 
-INSERT INTO Users (user_id, google_id, image_id, email, password, first_name, last_name, birth_date, phone_number, last_login, image_url)
-	VALUES ( '2', '00000000000000000002', '1', 'tasha.test.cs372@gmail.com', '', 'Tasha', 'Baller', '1988-02-29','575498541884', '2017-02-28 17:25:03', '');
+INSERT INTO Users (user_id, google_id, email, password, first_name, last_name, birth_date, phone_number, last_login, image_url) VALUES ( '2', '00000000000000000002', 'tasha.test.cs372@gmail.com', '', 'Tasha', 'Baller', '1988-02-29','575498541884', '2017-02-28 17:25:03', 'https://www.dropbox.com/s/pu96jl3gehay79x/usertestavatar.png?dl=0');
 	
-INSERT INTO Users (user_id, google_id, image_id, email, password, first_name, last_name, birth_date, phone_number, last_login, image_url)
-	VALUES ( '3', '00000000000000000003', '1', 'pizzaman10039@yahoo.com', 'CS372GroupProject', 'Robert', 'Khoo', '2006-10-31','09876543210', '2015-05-18 03:55:11', '');
+INSERT INTO Users (user_id, google_id, email, password, first_name, last_name, birth_date, phone_number, last_login, image_url) VALUES ( '3', '00000000000000000003', 'pizzaman10039@yahoo.com', 'CS372GroupProject', 'Robert', 'Khoo', '2006-10-31','09876543210', '2015-05-18 03:55:11', 'https://www.dropbox.com/s/pu96jl3gehay79x/usertestavatar.png?dl=0');
 
 	
 	
 /*	
-INSERT INTO Users (user_id, google_id, image_id, email, password, first_name, last_name, birth_date, phone_number, last_login)
+INSERT INTO Users (user_id, google_id, image_url, email, password, first_name, last_name, birth_date, phone_number, last_login)
 	VALUES ( '4', '', '4', 'billiams@yahoo.com', 'billiam', 'Bill', 'Williams', '1974-05-01','19878675309', '2017-04-28 03:55:11');
 	
-INSERT INTO Users (user_id, google_id, image_id, email, password, first_name, last_name, birth_date, phone_number, last_login)
+INSERT INTO Users (user_id, google_id, image_url, email, password, first_name, last_name, birth_date, phone_number, last_login)
 	VALUES ( '5', '', '5', 'imperfectAnemia@yahoo.com', 'blood', 'Roni', 'Brinks', '1997-08-26','19878675309', NOW());	
 	
-INSERT INTO Users (user_id, google_id, image_id, email, password, first_name, last_name, birth_date, phone_number, last_login)
+INSERT INTO Users (user_id, google_id, image_url, email, password, first_name, last_name, birth_date, phone_number, last_login)
 	VALUES ( '6', '', '6', 'causticAuspex@yahoo.com', 'heart', 'Esra', 'Astor', '1997-08-27','19878675309', NOW());	
 
-INSERT INTO Users (user_id, google_id, image_id, email, password, first_name, last_name, birth_date, phone_number, last_login)
+INSERT INTO Users (user_id, google_id, image_url, email, password, first_name, last_name, birth_date, phone_number, last_login)
 	VALUES ( '7', '', '7', 'confusedDefender@yahoo.com', 'balance', 'Lloyd', 'Valant', '1997-08-28','19878675309', NOW());	
 */	
 	/* need the googleIDs and box_id for the user
