@@ -157,3 +157,27 @@ CREATE TABLE Group_Files
 		ON DELETE SET NULL
 ) ENGINE=INNODB;
 
+
+
+/* --------------Initializing Tables -------------- */
+
+
+INSERT INTO Users (user_id, google_id, email, password, first_name, last_name, birth_date, phone_number, last_login, image_url) VALUES ('0', '0000000000000000000', 'blank@blank.com', 'empty', 'empty', 'empty', CURDATE(), '00000000000', NOW(), 'https://www.dropbox.com/s/k4gq3e364xy8r1b/default.png?dl=0' );
+
+INSERT INTO Groups (group_id, group_name, group_description)
+	VALUES ( '0', 'blank', 'blank');
+	
+INSERT INTO Group_Users (group_id, user_id, admin_leader)
+	VALUES ( '0', '0', 'TRUE');
+	
+INSERT INTO Personal_Calendar (event_id, user_id, event_date, entry_description)
+	VALUES ('0', '0', NOW(), 'blank');	
+	
+INSERT INTO Group_Calendar (event_id, group_id, user_id, event_date, entry_description)
+	VALUES ('0', '0', '0', NOW(), 'blank');	
+
+INSERT INTO Chat_Messages (message_id, group_id, user_id, date_created, message_contents)
+	VALUES ('0', '0', '0', NOW(), 'blank');
+
+
+

@@ -12,7 +12,6 @@ INSERT INTO Users (user_id, google_id, email, password, first_name, last_name, b
 
 /* ### these googleIDsare fake and won't authenticate*/
 
-INSERT INTO Users (user_id, google_id, email, password, first_name, last_name, birth_date, phone_number, last_login, image_url) VALUES ('0', '0000000000000000000', 'blank@blank.com', 'empty', 'empty', 'empty', CURDATE(), '00000000000', NOW(), 'https://www.dropbox.com/s/k4gq3e364xy8r1b/default.png?dl=0' );
 
 INSERT INTO Users (user_id, google_id, email, password, first_name, last_name, birth_date, phone_number, last_login, image_url) VALUES ( '1', '00000000000000000001', 'testersont20@gmail.com', 'testguy', ' Testy', 'Testerson', '1999-12-24', '12345678901', NOW(), 'https://www.dropbox.com/s/pu96jl3gehay79x/usertestavatar.png?dl=0');
 
@@ -45,8 +44,7 @@ INSERT INTO Groups (group_id, group_name, group_description)
 	VALUES ( <groupID (int)>, <groupname (string)>, <groupDescription (string)>);
 */
 
-INSERT INTO Groups (group_id, group_name, group_description)
-	VALUES ( '0', 'blank', 'blank');
+
 
 	
 INSERT INTO Groups (group_id, group_name, group_description)
@@ -70,8 +68,6 @@ INSERT INTO Group_Users (group_id, user_id, admin_leader)
 	VALUES ( <groupID int>, <groupname string>, '<isAdmin bool>);
 */
 
-INSERT INTO Group_Users (group_id, user_id, admin_leader)
-	VALUES ( '0', '0', 'TRUE');
 
 INSERT INTO Group_Users (group_id, user_id, admin_leader)
 	VALUES ( '1', '1', 'TRUE');	
@@ -131,50 +127,49 @@ INSERT INTO Personal_Calendar (event_id, user_id, event_date, event_description)
 	VALUES ( <event id (int)>, <userID (int), <DATETIME>, <event description (string));
 */
 
-INSERT INTO Personal_Calendar (event_id, user_id, event_date, event_description)
-	VALUES ('0', '0', NOW(), 'blank');
+
 
 	
 	
-INSERT INTO Personal_Calendar (event_id, user_id, event_date, event_description)
+INSERT INTO Personal_Calendar (event_id, user_id, event_date, entry_description)
 	VALUES ('1', '1', '2017-03-18 03:55:11', 'Test entryes');	
 
-INSERT INTO Personal_Calendar (event_id, user_id, event_date, event_description)
+INSERT INTO Personal_Calendar (event_id, user_id, event_date, entry_description)
 	VALUES ('2', '1', '2017-03-18 00:00:00', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet convallis eros vitae dictum. Nunc faucibus, augue eu laoreet molestie, dui dui venenatis mi, vitae molestie ex diam tincidunt metus. Curabitur pulvinar magna libero, sed venenatis ipsum scelerisque vitae. Nulla sollicitudin tempor diam sit amet consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris sit amet turpis non elit porta pretium vitae non massa. Cras sed vestibulum tortor.
 
 Ut ac cursus erat, ac blandit purus. Maecenas egestas lectus dolor, sit amet auctor elit aliquet vel. Pellentesque sed dapibus sem. Cras euismod at erat accumsan commodo. Donec elementum odio libero. Proin sodales justo ornare suscipit lacinia. Nulla tempor, enim ac aliquet sollicitudin, ante enim tempor massa, eu facilisis dolor metus id nisi.');		
 	
-INSERT INTO Personal_Calendar (event_id, user_id, event_date, event_description)
+INSERT INTO Personal_Calendar (event_id, user_id, event_date, entry_description)
 	VALUES ('2', '2', '2017-03-18 12:56:00', 'Buy Milk');	
 	
-INSERT INTO Personal_Calendar (event_id, user_id, event_date, event_description)
+INSERT INTO Personal_Calendar (event_id, user_id, event_date, entry_description)
 	VALUES ('3', '1', '2017-03-18 23:59:00', 'abcdefg123456789!@#$%^&*_-=+');	
 	
-INSERT INTO Personal_Calendar (event_id, user_id, event_date, event_description)
+INSERT INTO Personal_Calendar (event_id, user_id, event_date, entry_description)
 	VALUES ('4', '2', '2017-03-18 23:59:00', 'Test same datetime entry on another account');	
 	
-INSERT INTO Personal_Calendar (event_id, user_id, event_date, event_description)
+INSERT INTO Personal_Calendar (event_id, user_id, event_date, entry_description)
 	VALUES ('5', '1', '2017-03-18 23:59:00', 'Test same datetime entry on same account');		
 	
-INSERT INTO Personal_Calendar (event_id, user_id, event_date, event_description)
+INSERT INTO Personal_Calendar (event_id, user_id, event_date, entry_description)
 	VALUES ('6', '1', NOW(), 'Test datetime entry using NOW');		
 	
-INSERT INTO Personal_Calendar (event_id, user_id, event_date, event_description)
+INSERT INTO Personal_Calendar (event_id, user_id, event_date, entry_description)
 	VALUES ('7', '1', '2016-02-28 12:00:00', 'Test datetime entry on feb 28');
 
-INSERT INTO Personal_Calendar (event_id, user_id, event_date, event_description)
+INSERT INTO Personal_Calendar (event_id, user_id, event_date, entry_description)
 	VALUES ('8', '1', '2016-02-29 12:00:00', 'Test datetime entry on feb 29');	
 	
-INSERT INTO Personal_Calendar (event_id, user_id, event_date, event_description)
+INSERT INTO Personal_Calendar (event_id, user_id, event_date, entry_description)
 	VALUES ('9', '1', '2016-02-29 12:00:00', 'Test newline character \n -does this work? \n -does this show up right?');		
 	
-INSERT INTO Personal_Calendar (event_id, user_id, event_date, event_description)
+INSERT INTO Personal_Calendar (event_id, user_id, event_date, entry_description)
 	VALUES ('10', '2', '2017-03-28 12:00:00', 'Hand in project');	
 	
-INSERT INTO Personal_Calendar (event_id, user_id, event_date, event_description)
+INSERT INTO Personal_Calendar (event_id, user_id, event_date, entry_description)
 	VALUES ('11', '2', '2017-03-28 18:00:00', 'Study for MATH122 midterm');	
 
-INSERT INTO Personal_Calendar (event_id, user_id, event_date, event_description)
+INSERT INTO Personal_Calendar (event_id, user_id, event_date, entry_description)
 	VALUES ('13', '2', '2017-03-29 12:00:00', 'Lunch with Judy, discuss project');	
 	
 	
@@ -185,8 +180,7 @@ INSERT INTO Group_Calendar (event_id, group_id, user_id, event_date, entry_descr
 */
 
 
-INSERT INTO Group_Calendar (event_id, group_id, user_id, event_date, entry_description)
-	VALUES ('0', '0', '0', NOW(), 'blank');
+
 
 	
 	
@@ -216,8 +210,7 @@ INSERT INTO Chat_Messages (message_id, group_id, user_id, date_created, message_
 	VALUES (<int>, <int>, <int>, <DATETIME>, <string>);
 */
 
-INSERT INTO Chat_Messages (message_id, group_id, user_id, date_created, message_contents)
-	VALUES ('0', '0', '0', NOW(), 'blank');
+
 	
 	
 INSERT INTO Chat_Messages (message_id, group_id, user_id, date_created, message_contents)
