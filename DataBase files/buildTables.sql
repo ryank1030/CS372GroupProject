@@ -14,7 +14,7 @@ CREATE TABLE Users
 	password		VARCHAR(20),
 	first_name		VARCHAR(40) NOT NULL,
 	last_name		VARCHAR(40) NOT NULL,
-	birth_date		DATE NOT NULL,
+	birth_date		DATE,
 	phone_number	INTEGER(11),
 	last_login		DATETIME,
 	
