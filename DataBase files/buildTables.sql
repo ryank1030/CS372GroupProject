@@ -11,7 +11,7 @@ CREATE TABLE Users
 	google_id		VARCHAR(21) UNIQUE,
 	email 			VARCHAR(254) UNIQUE NOT NULL,
 	image_url		VARCHAR(2083),
-	password		VARCHAR(20),
+/*	password		VARCHAR(20),*/
 	first_name		VARCHAR(40) NOT NULL,
 	last_name		VARCHAR(40) NOT NULL,
 	birth_date		DATE,

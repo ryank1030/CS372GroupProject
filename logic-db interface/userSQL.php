@@ -51,9 +51,13 @@ class UserSQL
 
 
 	// make new user account
-	public function add_user($new_user_id, $googleID, $email, $pass, $firstname, $lastname, $bday, $phoneNum, $imageUrl)
+//	public function add_user($new_user_id, $googleID, $email, $pass, $firstname, $lastname, $bday, $phoneNum, $imageUrl)
+	public function add_user($new_user_id, $googleID, $email, $firstname, $lastname, $bday, $phoneNum, $imageUrl)
 	{		
-		return "INSERT INTO Users (user_id, google_id, image_url, email, password, first_name, last_name, birth_date, phone_number, last_login) VALUES ('$new_user_id', '$googleID', '$imageUrl', '$email', '$pass', '$firstname', '$lastname', $bday, '$phoneNum', NOW())";
+		//		return "INSERT INTO Users (user_id, google_id, image_url, email, password, first_name, last_name, birth_date, phone_number, last_login) VALUES ('$new_user_id', '$googleID', '$imageUrl', '$email', '$pass', '$firstname', '$lastname', $bday, '$phoneNum', NOW())";
+		return "INSERT INTO Users (user_id, google_id, image_url, email, first_name, last_name, 	birth_date, phone_number, last_login) VALUES ('$new_user_id', '$googleID', '$imageUrl', '$email', '$firstname', '$lastname', $bday, '$phoneNum', NOW())";
+
+
 
 	}
 
