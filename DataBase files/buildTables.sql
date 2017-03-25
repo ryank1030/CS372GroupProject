@@ -7,7 +7,7 @@
 
 /* User profiles and login credentials */
 CREATE TABLE Users
-(	user_id 		INTEGER UNIQUE NOT NULL,
+(	user_id 		INTEGER UNIQUE NOT NULL AUTO_INCREMENT,
 	google_id		VARCHAR(21) UNIQUE,
 	email 			VARCHAR(254) UNIQUE NOT NULL,
 	image_url		VARCHAR(2083),
@@ -27,7 +27,7 @@ CREATE TABLE Users
 
 /* Group profiles */
 CREATE TABLE Groups
-(	group_id 			INTEGER UNIQUE NOT NULL,
+(	group_id 			INTEGER UNIQUE NOT NULL AUTO_INCREMENT,
 	group_name 			VARCHAR(100) NOT NULL,
 	group_description	VARCHAR(5000),
 	
@@ -72,7 +72,7 @@ CREATE TABLE Add_Users_Pending
 
 /* Chat Message entries */
 CREATE TABLE Chat_Messages
-(	message_id		INTEGER UNIQUE NOT NULL,
+(	message_id		INTEGER UNIQUE NOT NULL AUTO_INCREMENT,
 	group_id 		INTEGER NOT NULL,
 	user_id 		INTEGER,
 	date_created	DATETIME NOT NULL,
@@ -92,7 +92,7 @@ CREATE TABLE Chat_Messages
 
 /* Personal Calendar Entries */
 CREATE TABLE Personal_Calendar
-(	event_id	 		INTEGER UNIQUE NOT NULL,
+(	event_id	 		INTEGER UNIQUE NOT NULL AUTO_INCREMENT,
 	user_id		 		INTEGER UNIQUE,
 	event_date			DATETIME,
 	entry_description	VARCHAR(1000),
@@ -128,7 +128,7 @@ CREATE TABLE Group_Calendar
 /* Hosted File information */
 /* Need to know what to do with files when a user is deleted because of groups, and the file API in general */
 CREATE TABLE Files
-(	fileshare_id 		INTEGER UNIQUE NOT NULL,
+(	fileshare_id 		INTEGER UNIQUE NOT NULL AUTO_INCREMENT,
 	created_user_id 	INTEGER NOT NULL,
 	fileshare_name		VARCHAR(255) UNIQUE NOT NULL,
 	file_extension		VARCHAR(5),
