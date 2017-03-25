@@ -139,6 +139,7 @@ CREATE TABLE Files
 	PRIMARY KEY (fileshare_id),
 	FOREIGN KEY (created_user_id) 
 		REFERENCES Users (user_id)
+		ON DELETE CASCADE
 ) ENGINE=INNODB;
 
 
@@ -149,9 +150,11 @@ CREATE TABLE Group_Files
 	modified_user_id 	INTEGER,
 
 	FOREIGN KEY (group_id)
-		REFERENCES Groups (group_id),
+		REFERENCES Groups (group_id)
+		ON DELETE CASCADE,
 	FOREIGN KEY (fileshare_id)
-		REFERENCES Files (fileshare_id),
+		REFERENCES Files (fileshare_id)
+		ON DELETE CASCADE,
 	FOREIGN KEY (modified_user_id)
 		REFERENCES Users (user_id)
 		ON DELETE SET NULL
