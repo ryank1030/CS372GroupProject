@@ -353,7 +353,7 @@ class User
 			return false;
 			
 		}
-		
+/*		
 		// check if the account exists on the db
 		if (!$result = mysqli_query($db, $uSql->get_user_id($this->google_id)))
 		{
@@ -369,12 +369,12 @@ class User
 				$old_id = $row[0];
 			}		
 		}
-		
+*/		
 		$this->user_id = $old_id + 1;
 		
 		// create new listing in Users table
 //		if (!$result3 = $db->query($uSql->add_user($this->user_id, $this->google_id, $this->email, $this->password, $this->first_name, $this->last_name, $this->dob, $this->phone, $this->image_url )))
-		if (!$result3 = $db->query($uSql->add_user($this->user_id, $this->google_id, $this->email, $this->first_name, $this->last_name, $this->dob, $this->phone, $this->image_url )))
+		if (!$result3 = $db->query($uSql->add_user($this->google_id, $this->email, $this->first_name, $this->last_name, $this->dob, $this->phone, $this->image_url )))
 
 		{
 			mysqli_close($db);

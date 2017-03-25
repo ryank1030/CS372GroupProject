@@ -22,9 +22,10 @@ class GroupSQL
 		return "INSERT INTO Groups (group_id, group_name) VALUES ( '0', 'blank')";
 	}
 	
-	public function create_group($group_id, $group_name, $group_descrip)
+//	public function create_group($group_id, $group_name, $group_descrip)
+	public function create_group($group_name, $group_descrip)
 	{
-		return "INSERT INTO Groups (group_id, group_name, group_description) VALUES ( '$group_id', '$group_name', '$group_descrip')";
+		return "INSERT INTO Groups (group_name, group_description) VALUES ('$group_name', '$group_descrip')";
 	}
 	
 	

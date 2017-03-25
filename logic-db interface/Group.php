@@ -188,7 +188,7 @@ class Group
 		{
 			return FALSE;
 		}
-	
+/*	
 		// get the largest existing group_id from the groups table
 		if ($result = mysqli_query($db, $gSql->max_group_id()))
 		{	
@@ -197,7 +197,8 @@ class Group
 				$old_id = $row[0];
 			}		
 		}
-		
+*/
+/*		
 		// create a new id for this group
 		$this->group_id = $old_id + 1;
 			
@@ -208,9 +209,9 @@ class Group
 			mysqli_close($db);
 			return FALSE;
 		}
-		
+*/		
 		// add in the user as the group admin 
-		if(!$this->join_group($conn, $gSql, $this->group_id, $userID, TRUE))
+		if(!$this->join_group($conn, $gSql, $userID, TRUE))
 		{
 			mysqli_close($db);
 			return FALSE;

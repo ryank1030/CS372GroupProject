@@ -29,12 +29,6 @@
 
 class UserSQL
 {
-	//init default user (do not use for an actual account)
-	public function init_user()
-	{
-		return "INSERT INTO Users (user_id, google_id, image_id, email, password, first_name, last_name, birth_date, phone_number, last_login, image_url) VALUES ( '0', '000000000000000000000', '0', 'blank@blank.com', '', 'empty', 'empty', '1990-01-01','12345678901', NOW(), '')";
-	}
-		
 		
 	// get user_id from google_id
 	public function get_user_id($googleID)
@@ -52,10 +46,10 @@ class UserSQL
 
 	// make new user account
 //	public function add_user($new_user_id, $googleID, $email, $pass, $firstname, $lastname, $bday, $phoneNum, $imageUrl)
-	public function add_user($new_user_id, $googleID, $email, $firstname, $lastname, $bday, $phoneNum, $imageUrl)
+	public function add_user($googleID, $email, $firstname, $lastname, $bday, $phoneNum, $imageUrl)
 	{		
 		//		return "INSERT INTO Users (user_id, google_id, image_url, email, password, first_name, last_name, birth_date, phone_number, last_login) VALUES ('$new_user_id', '$googleID', '$imageUrl', '$email', '$pass', '$firstname', '$lastname', $bday, '$phoneNum', NOW())";
-		return "INSERT INTO Users (user_id, google_id, image_url, email, first_name, last_name, 	birth_date, phone_number, last_login) VALUES ('$new_user_id', '$googleID', '$imageUrl', '$email', '$firstname', '$lastname', $bday, '$phoneNum', NOW())";
+		return "INSERT INTO Users (google_id, image_url, email, first_name, last_name, 	birth_date, phone_number, last_login) VALUES ('$googleID', '$imageUrl', '$email', '$firstname', '$lastname', $bday, '$phoneNum', NOW())";
 
 
 
