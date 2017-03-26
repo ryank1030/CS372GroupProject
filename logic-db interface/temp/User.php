@@ -63,7 +63,7 @@ class User
 	
 	private $user_id;		// format: int, never change this directly unless fake populating a server
 	private $email;			// ### check format outside of these functions
-//	private $password;		// max length 20 chars
+	private $password;		// max length 20 chars
 	private	$google_id;		// 21 char string (let me know if it needs an extra char for the '/n' character)
 	private $first_name;
 	private $last_name;
@@ -81,7 +81,7 @@ class User
 	{
 		$this->user_id = null;
 		$this->email = null;
-//		$this->password = null;
+		$this->password = null;
 		$this->google_id = null;
 		$this->first_name = null;
 		$this->last_name = null;
@@ -116,14 +116,14 @@ class User
 		return $this->email;
 	}
 	
-/*	
+	
 	// Returns password
 	//### works
 	public function get_user_pass()
 	{
 		return $this->password;
 	}
-*/	
+	
 	
 	// Returns google ID
 	//### works
@@ -193,7 +193,7 @@ class User
 	// use this when creating an account to fill this instance's variables
 	// does not set user_id
 	//### works
-	public function set_user($email_in, $google_id_in, $first_name_in, $last_name_in, $dob_in, $image_url_in, $phone_in)
+	public function set_user($email_in, $google_id_in, $first_name_in, $last_name_in, $dob_in, $image_url_in,  $phone_in)
 	{
 		$this->email = $email_in; 
 		$this->google_id = $google_id_in; 
@@ -347,13 +347,14 @@ class User
 	// ### works
 	public function create_user($conn, $uSql)
 	{
-		// connect to the server
+
 		if(!$db = mysqli_connect($conn->host_name(), $conn->host_user(), $conn->host_pass(), $conn->serv_name()))
 		{
 			return false;
+
 			
 		}
-		
+
 		// check if the account exists on the db
 		if (!$result = mysqli_query($db, $uSql->get_user_id($this->google_id)))
 		{
@@ -362,17 +363,29 @@ class User
 		} 
 
 		
+		// generate a new user_id based on the last max user_id on the Users table.
+		if ($result2 = mysqli_query($db, $uSql->max_user_id()))
+		{	
+			while ($row = mysqli_fetch_row($result2)) 
+			{					
+				$old_id = $row[0];
+			}		
+		}
+
+		$this->user_id = $old_id + 1;
+		
 		// create new listing in Users table
-
-		if (!$result3 = $db->query($uSql->add_user($this->google_id, $this->email, $this->first_name, $this->last_name, $this->dob, $this->phone, $this->image_url )))
-
+		if (!$result3 = $db->query($uSql->add_user($this->user_id, $this->google_id, $this->email, $this->password, $this->first_name, $this->last_name, $this->dob, $this->phone, $this->image_url )))
 		{
+echo $this->user_id . ":" . $this->google_id . ":" . $this->email . ":" . $this->password . ":" . $this->first_name . ":" . $this->last_name . ":" . $this->dob . ":" . $this->phone . ":" . $this->image_url;
+echo "outside";	
 			mysqli_close($db);
 			return false;
 		} 
 		
 		mysqli_close($db);
 		return true;	
+
 	}
 	
 	
@@ -454,6 +467,14 @@ class User
 	
 	
 }
+
+
+
+
+
+
+
+
 
 
 ?>

@@ -188,34 +188,45 @@ class Group
 		{
 			return FALSE;
 		}
-/*	
-		// get the largest existing group_id from the groups table
-		if ($result = mysqli_query($db, $gSql->max_group_id()))
-		{	
-			while ($row = mysqli_fetch_row($result)) 
-			{					
-				$old_id = $row[0];
-			}		
-		}
-*/
-/*		
-		// create a new id for this group
-		$this->group_id = $old_id + 1;
-			
+
+		echo "connected, ";
+		
 		// create the group from the info in this class
-		if (!$result2 = mysqli_query($db, $gSql->create_group($this->group_id, $this->group_name, $this->group_description)))
+
+	
+		if (!$result2 = mysqli_query($db, $gSql->create_group($this->group_name, $this->group_description)))
+
+
 		{
-			echo mysqli_error($result2);
+			//echo mysqli_error($result2);
 			mysqli_close($db);
 			return FALSE;
 		}
-*/		
+
+		echo "created group";
+		
+		
+		
+		if (!$result3 = mysqli_query($db, $gSql->max_group_id()))
+		{
+			return FALSE;
+		}
+		
+		
+		$row = mysqli_fetch_row($result3);
+		
+		$this->group_id = $row[0];
+		
+		
 		// add in the user as the group admin 
-		if(!$this->join_group($conn, $gSql, $userID, TRUE))
+		if(!$this->join_group($conn, $gSql, $this->group_id, $userID, TRUE))
 		{
 			mysqli_close($db);
 			return FALSE;
 		}	
+		
+		echo "added to group.";
+		
 		
 		mysqli_close($db);
 		return TRUE;
