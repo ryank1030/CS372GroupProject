@@ -43,7 +43,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFapnCu0q5ajLs="
 									},
-									"name": "Edit FIles Admin, Mulit Admins, Leader",
+									"name": "Upload Files Admin, Mulit Admins, Leader",
 									"visible": true,
 									"defaultDiagram": false,
 									"ownedViews": [
@@ -74,11 +74,11 @@
 													"containerExtending": false,
 													"left": 75.97900390625,
 													"top": 10,
-													"width": 224.97705078125,
+													"width": 243.048828125,
 													"height": 13,
 													"autoResize": false,
 													"underline": false,
-													"text": "Edit FIles Admin, Mulit Admins, Leader",
+													"text": "Upload Files Admin, Mulit Admins, Leader",
 													"horizontalAlignment": 2,
 													"verticalAlignment": 5,
 													"wordWrap": false
