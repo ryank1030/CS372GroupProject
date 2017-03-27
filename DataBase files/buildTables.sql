@@ -1,8 +1,6 @@
-
+/* buildTables.sql */
 
 /* ------------USER TABLES----------------- */
-
-
 
 
 /* User profiles and login credentials */
@@ -15,7 +13,7 @@ CREATE TABLE Users
 	first_name		VARCHAR(40) NOT NULL,
 	last_name		VARCHAR(40),
 	birth_date		DATE,
-	phone_number	INTEGER(11),
+	phone_number	VARCHAR(255),
 	last_login		DATETIME,
 	
 	PRIMARY KEY (user_id)
@@ -88,90 +86,37 @@ CREATE TABLE Chat_Messages
 ) ENGINE=INNODB;
 
 
-/* -------------CALENDAR TABLES----------------- */
-
-/* Personal Calendar Entries */
-CREATE TABLE Personal_Calendar
-(	event_id	 		INTEGER UNIQUE NOT NULL AUTO_INCREMENT,
-	user_id		 		INTEGER UNIQUE,
-	event_date			DATETIME,
-	entry_description	VARCHAR(1000),
-	
-	PRIMARY KEY (event_id),
-	FOREIGN KEY (user_id) 
-		REFERENCES Users (user_id)
-		ON DELETE CASCADE
-) ENGINE=INNODB;
-
-
-/* Group Calendar Entries */
-CREATE TABLE Group_Calendar
-(	event_id 			INTEGER UNIQUE NOT NULL,
-	group_id 			INTEGER NOT NULL,
-	user_id				INTEGER,
-	event_date			DATETIME,
-	entry_description	VARCHAR(1000),
-	
-	PRIMARY KEY (event_id),
-	FOREIGN KEY (group_id) 
-		REFERENCES Groups (group_id)
-		ON DELETE CASCADE,	
-	FOREIGN KEY (user_id) 
-		REFERENCES Users (user_id)
-		ON DELETE SET NULL
-) ENGINE=INNODB;
-
-
 /* ----------------FILE HOSTING TABLES---------------- */
 
 
 /* Hosted File information */
 /* Need to know what to do with files when a user is deleted because of groups, and the file API in general */
 CREATE TABLE `gfile` (
-    `group_id`   int not null,
-    `gfid`      Int Unsigned Not Null Auto_Increment,
-    `name`      VarChar(255) Not Null Default 'Untitled.txt',
-    `mime`      VarChar(50) Not Null Default 'text/plain',
-    `size`      BigInt Unsigned Not Null Default 0,
-    `data`      MediumBlob Not Null,
-    `created`   DateTime Not Null,
+    `group_id`  INT NOT NULL,
+    `gfid`      INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `name`      VARCHAR(255) NOT NULL DEFAULT 'Untitled.txt',
+    `mime`      VARCHAR(50) NOT NULL DEFAULT 'text/plain',
+    `size`      BIGINT UNSIGNED NOT NULL DEFAULT 0,
+    `data`      MEDIUMBLOB NOT NULL,
+    `created`   DATETIME NOT NULL,
     PRIMARY KEY (`gfid`), 
-    FOREIGN KEY (`group_id`) REFERENCES Groups (`group_id`) ON DELETE CASCADE
+    FOREIGN KEY (`group_id`) 
+		REFERENCES Groups (`group_id`) 
+		ON DELETE CASCADE
 ) ENGINE=INNODB;
  
+ 
 CREATE TABLE `pfile` (
-    `user_id`   int not null,
-    `pfid`      Int Unsigned Not Null Auto_Increment,
-    `name`      VarChar(255) Not Null Default 'Untitled.txt',
-    `mime`      VarChar(50) Not Null Default 'text/plain',
-    `size`      BigInt Unsigned Not Null Default 0,
-    `data`      MediumBlob Not Null,
-    `created`   DateTime Not Null,
+    `user_id`   INT NOT NULL,
+    `pfid`      INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `name`      VARCHAR(255) NOT NULL DEFAULT 'Untitled.txt',
+    `mime`      VARCHAR(50) NOT NULL DEFAULT 'text/plain',
+    `size`      BIGINT UNSIGNED NOT NULL DEFAULT 0,
+    `data`      MEDIUMBLOB NOT NULL,
+    `created`   DATETIME NOT NULL,
     PRIMARY KEY (`pfid`),
-    FOREIGN KEY (`user_id`) REFERENCES Users (`user_id`) ON DELETE CASCADE
+    FOREIGN KEY (`user_id`) 
+		REFERENCES Users (`user_id`) 
+		ON DELETE CASCADE
 ) ENGINE=INNODB;
-
-
-
-/* --------------Initializing Tables -------------- */
-
-/*
-INSERT INTO Users (user_id, google_id, email, password, first_name, last_name, birth_date, phone_number, last_login, image_url) VALUES ('0', '0000000000000000000', 'blank@blank.com', 'empty', 'empty', 'empty', CURDATE(), '00000000000', NOW(), 'https://www.dropbox.com/s/k4gq3e364xy8r1b/default.png?dl=0' );
-
-INSERT INTO Groups (group_id, group_name, group_description)
-	VALUES ( '0', 'blank', 'blank');
-	
-INSERT INTO Group_Users (group_id, user_id, admin_leader)
-	VALUES ( '0', '0', 'TRUE');
-	
-INSERT INTO Personal_Calendar (event_id, user_id, event_date, entry_description)
-	VALUES ('0', '0', NOW(), 'blank');	
-	
-INSERT INTO Group_Calendar (event_id, group_id, user_id, event_date, entry_description)
-	VALUES ('0', '0', '0', NOW(), 'blank');	
-
-INSERT INTO Chat_Messages (message_id, group_id, user_id, date_created, message_contents)
-	VALUES ('0', '0', '0', NOW(), 'blank');
-*/
-
 
