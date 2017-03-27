@@ -13739,7 +13739,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFaZu4cLocDUbI="
 					},
-					"name": "Group Chat",
+					"name": "GroupChat",
 					"visible": true,
 					"defaultDiagram": false,
 					"ownedViews": [
@@ -14097,7 +14097,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "Group Messaging",
+											"text": "Group Chat",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -18502,7 +18502,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFaZu4cLocDUbI="
 					},
-					"name": "Group Messaging",
+					"name": "Group Chat",
 					"visibility": "public"
 				},
 				{
@@ -45870,7 +45870,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFahchxTAT3UZ4="
 					},
-					"name": "FilesUser",
+					"name": "FileSystem",
 					"visible": true,
 					"defaultDiagram": false,
 					"ownedViews": [
