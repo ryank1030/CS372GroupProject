@@ -3141,19 +3141,19 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 32,
-											"top": 295,
+											"left": 0,
+											"top": 287,
 											"width": 471.70703125,
 											"height": 13,
 											"autoResize": false,
-											"alpha": 2.959943841720319,
-											"distance": 99.6393496566492,
+											"alpha": 2.991221248024307,
+											"distance": 66.75327707311455,
 											"hostEdge": {
 												"$ref": "AAAAAAFaj9oQAYGXbts="
 											},
 											"edgePosition": 1,
 											"underline": false,
-											"text": "5 : \"You must be an admin or have created this entry to edit it\" message displayed",
+											"text": "5 : \"You must  have created this entry to edit it\" ",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -4262,7 +4262,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFabBsjIkqToFs="
 							},
-							"name": "\"You must be an admin or have created this entry to edit it\" message displayed",
+							"name": "\"You must  have created this entry to edit it\" ",
 							"source": {
 								"$ref": "AAAAAAFabByzV0rDrdU="
 							},
