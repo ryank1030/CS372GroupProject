@@ -5,27 +5,6 @@
 	"ownedElements": [
 		{
 			"_type": "UMLModel",
-			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
-			"_parent": {
-				"$ref": "AAAAAAFF+h6SjaM2Hec="
-			},
-			"name": "Model",
-			"ownedElements": [
-				{
-					"_type": "UMLClassDiagram",
-					"_id": "AAAAAAFF+qBtyKM79qY=",
-					"_parent": {
-						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
-					},
-					"name": "Main",
-					"visible": true,
-					"defaultDiagram": true
-				}
-			],
-			"visibility": "public"
-		},
-		{
-			"_type": "UMLModel",
 			"_id": "AAAAAAFa4kJy+v09rKg=",
 			"_parent": {
 				"$ref": "AAAAAAFF+h6SjaM2Hec="
@@ -356,7 +335,7 @@
 											"_parent": {
 												"$ref": "AAAAAAFa4kM2Bf1yot4="
 											},
-											"visible": false,
+											"visible": true,
 											"enabled": true,
 											"lineColor": "#000000",
 											"fillColor": "#ffffff",
@@ -365,12 +344,13 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 0,
-											"top": 0,
-											"width": 0,
+											"left": 373,
+											"top": 303,
+											"width": 165,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
+											"text": "«7070 Blakeney dr.»",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -391,7 +371,7 @@
 											"containerChangeable": false,
 											"containerExtending": false,
 											"left": 373,
-											"top": 305,
+											"top": 318,
 											"width": 165,
 											"height": 13,
 											"autoResize": false,
@@ -465,7 +445,7 @@
 									"left": 368,
 									"top": 298,
 									"width": 175,
-									"height": 25,
+									"height": 38,
 									"autoResize": false,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAFa4kM2Bv1ziek="
@@ -644,7 +624,7 @@
 											"_parent": {
 												"$ref": "AAAAAAFa4kOxLv2eX+0="
 											},
-											"visible": false,
+											"visible": true,
 											"enabled": true,
 											"lineColor": "#000000",
 											"fillColor": "#ffffff",
@@ -653,12 +633,13 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 0,
-											"top": 0,
-											"width": 0,
+											"left": 645,
+											"top": 303,
+											"width": 157,
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
+											"text": "«7070 Blakeney dr.»",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -679,7 +660,7 @@
 											"containerChangeable": false,
 											"containerExtending": false,
 											"left": 645,
-											"top": 305,
+											"top": 318,
 											"width": 157,
 											"height": 13,
 											"autoResize": false,
@@ -753,7 +734,7 @@
 									"left": 640,
 									"top": 298,
 									"width": 167,
-									"height": 25,
+									"height": 38,
 									"autoResize": false,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAFa4kOxLv2fLbI="
@@ -2757,6 +2738,7 @@
 							"isDerived": false
 						}
 					],
+					"stereotype": "7070 Blakeney dr.",
 					"visibility": "public",
 					"isAbstract": false,
 					"isFinalSpecialization": false,
@@ -2784,6 +2766,7 @@
 							"isIndirectlyInstantiated": true
 						}
 					],
+					"stereotype": "7070 Blakeney dr.",
 					"visibility": "public",
 					"isAbstract": false,
 					"isFinalSpecialization": false,
