@@ -13,7 +13,7 @@ CREATE TABLE Users
 	image_url		VARCHAR(2083),
 	password		VARCHAR(20),
 	first_name		VARCHAR(40) NOT NULL,
-	last_name		VARCHAR(40) NOT NULL,
+	last_name		VARCHAR(40),
 	birth_date		DATE,
 	phone_number	INTEGER(11),
 	last_login		DATETIME,
@@ -127,44 +127,35 @@ CREATE TABLE Group_Calendar
 
 /* Hosted File information */
 /* Need to know what to do with files when a user is deleted because of groups, and the file API in general */
-CREATE TABLE Files
-(	fileshare_id 		INTEGER UNIQUE NOT NULL AUTO_INCREMENT,
-	created_user_id 	INTEGER NOT NULL,
-	fileshare_name		VARCHAR(255) UNIQUE NOT NULL,
-	file_extension		VARCHAR(5),
-	file_size			INTEGER,
-	date_created		DATETIME,
-	date_modified		DATETIME,
-	
-	PRIMARY KEY (fileshare_id),
-	FOREIGN KEY (created_user_id) 
-		REFERENCES Users (user_id)
-		ON DELETE CASCADE
+CREATE TABLE `gfile` (
+    `group_id`   int not null,
+    `gfid`      Int Unsigned Not Null Auto_Increment,
+    `name`      VarChar(255) Not Null Default 'Untitled.txt',
+    `mime`      VarChar(50) Not Null Default 'text/plain',
+    `size`      BigInt Unsigned Not Null Default 0,
+    `data`      MediumBlob Not Null,
+    `created`   DateTime Not Null,
+    PRIMARY KEY (`gfid`), 
+    FOREIGN KEY (`group_id`) REFERENCES Groups (`group_id`) ON DELETE CASCADE
 ) ENGINE=INNODB;
-
-
-/* Group File information */
-CREATE TABLE Group_Files
-(	group_id			INTEGER NOT NULL,
-	fileshare_id 		INTEGER NOT NULL,
-	modified_user_id 	INTEGER,
-
-	FOREIGN KEY (group_id)
-		REFERENCES Groups (group_id)
-		ON DELETE CASCADE,
-	FOREIGN KEY (fileshare_id)
-		REFERENCES Files (fileshare_id)
-		ON DELETE CASCADE,
-	FOREIGN KEY (modified_user_id)
-		REFERENCES Users (user_id)
-		ON DELETE CASCADE
+ 
+CREATE TABLE `pfile` (
+    `user_id`   int not null,
+    `pfid`      Int Unsigned Not Null Auto_Increment,
+    `name`      VarChar(255) Not Null Default 'Untitled.txt',
+    `mime`      VarChar(50) Not Null Default 'text/plain',
+    `size`      BigInt Unsigned Not Null Default 0,
+    `data`      MediumBlob Not Null,
+    `created`   DateTime Not Null,
+    PRIMARY KEY (`pfid`),
+    FOREIGN KEY (`user_id`) REFERENCES Users (`user_id`) ON DELETE CASCADE
 ) ENGINE=INNODB;
 
 
 
 /* --------------Initializing Tables -------------- */
 
-
+/*
 INSERT INTO Users (user_id, google_id, email, password, first_name, last_name, birth_date, phone_number, last_login, image_url) VALUES ('0', '0000000000000000000', 'blank@blank.com', 'empty', 'empty', 'empty', CURDATE(), '00000000000', NOW(), 'https://www.dropbox.com/s/k4gq3e364xy8r1b/default.png?dl=0' );
 
 INSERT INTO Groups (group_id, group_name, group_description)
@@ -181,6 +172,6 @@ INSERT INTO Group_Calendar (event_id, group_id, user_id, event_date, entry_descr
 
 INSERT INTO Chat_Messages (message_id, group_id, user_id, date_created, message_contents)
 	VALUES ('0', '0', '0', NOW(), 'blank');
-
+*/
 
 
