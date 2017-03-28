@@ -124,8 +124,8 @@
 									"containerExtending": false,
 									"left": 0,
 									"top": 0,
-									"width": 695,
-									"height": 521,
+									"width": 1185,
+									"height": 721,
 									"autoResize": false,
 									"nameLabel": {
 										"$ref": "AAAAAAFabBsjIkqWJpA="
@@ -305,7 +305,7 @@
 											"left": 52,
 											"top": 80,
 											"width": 1,
-											"height": 455,
+											"height": 461,
 											"autoResize": false
 										}
 									],
@@ -321,7 +321,7 @@
 									"left": 16,
 									"top": 40,
 									"width": 72.736328125,
-									"height": 495,
+									"height": 501,
 									"autoResize": false,
 									"stereotypeDisplay": "label",
 									"showVisibility": true,
@@ -507,7 +507,7 @@
 											"left": 287,
 											"top": 80,
 											"width": 1,
-											"height": 455,
+											"height": 461,
 											"autoResize": false
 										}
 									],
@@ -523,7 +523,7 @@
 									"left": 232,
 									"top": 40,
 									"width": 110.314453125,
-									"height": 495,
+									"height": 501,
 									"autoResize": false,
 									"stereotypeDisplay": "label",
 									"showVisibility": true,
@@ -573,7 +573,7 @@
 													"showShadow": true,
 													"containerChangeable": false,
 													"containerExtending": false,
-													"left": 640,
+													"left": 480,
 													"top": 0,
 													"width": 0,
 													"height": 13,
@@ -598,7 +598,7 @@
 													"showShadow": true,
 													"containerChangeable": false,
 													"containerExtending": false,
-													"left": 597,
+													"left": 517,
 													"top": 47,
 													"width": 102.47265625,
 													"height": 13,
@@ -624,7 +624,7 @@
 													"showShadow": true,
 													"containerChangeable": false,
 													"containerExtending": false,
-													"left": 640,
+													"left": 480,
 													"top": 0,
 													"width": 106.20263671875,
 													"height": 13,
@@ -650,7 +650,7 @@
 													"showShadow": true,
 													"containerChangeable": false,
 													"containerExtending": false,
-													"left": 640,
+													"left": 480,
 													"top": 0,
 													"width": 0,
 													"height": 13,
@@ -670,7 +670,7 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 592,
+											"left": 512,
 											"top": 40,
 											"width": 112.47265625,
 											"height": 40,
@@ -706,10 +706,10 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 648,
+											"left": 568,
 											"top": 80,
 											"width": 1,
-											"height": 441,
+											"height": 447,
 											"autoResize": false
 										}
 									],
@@ -722,10 +722,10 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 592,
+									"left": 512,
 									"top": 40,
 									"width": 112.47265625,
-									"height": 481,
+									"height": 487,
 									"autoResize": false,
 									"stereotypeDisplay": "label",
 									"showVisibility": true,
@@ -768,13 +768,13 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 26,
-											"top": 104,
-											"width": 281.08056640625,
-											"height": 13,
+											"left": 71,
+											"top": 87,
+											"width": 191,
+											"height": 26,
 											"autoResize": false,
-											"alpha": 1.5707963267948966,
-											"distance": 10,
+											"alpha": 1.5707958267948967,
+											"distance": 20,
 											"hostEdge": {
 												"$ref": "AAAAAAFaj9I214E2QAY="
 											},
@@ -783,7 +783,7 @@
 											"text": "1 : User selects calendar entry and tries editing it",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
-											"wordWrap": false
+											"wordWrap": true
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -938,13 +938,13 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 312,
-											"top": 135,
-											"width": 302.7958984375,
-											"height": 13,
+											"left": 307,
+											"top": 110,
+											"width": 233,
+											"height": 26,
 											"autoResize": false,
-											"alpha": -4.612721317992635,
-											"distance": 10.04987562112089,
+											"alpha": -4.676690224393268,
+											"distance": 28.0178514522438,
 											"hostEdge": {
 												"$ref": "AAAAAAFabB51P0s7niI="
 											},
@@ -953,7 +953,7 @@
 											"text": "2 : Calendar entry sends information to the database",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
-											"wordWrap": false
+											"wordWrap": true
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -973,7 +973,7 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 464,
+											"left": 424,
 											"top": 121,
 											"width": 0,
 											"height": 13,
@@ -1007,7 +1007,7 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 464,
+											"left": 424,
 											"top": 156,
 											"width": 0,
 											"height": 13,
@@ -1041,7 +1041,7 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 641,
+											"left": 561,
 											"top": 152,
 											"width": 14,
 											"height": 29,
@@ -1064,7 +1064,7 @@
 										"$ref": "AAAAAAFabByzWErKj0s="
 									},
 									"lineStyle": 0,
-									"points": "287:152;641:152",
+									"points": "287:152;561:152",
 									"nameLabel": {
 										"$ref": "AAAAAAFabB51P0s8gWs="
 									},
@@ -1095,7 +1095,7 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 704,
+									"left": 688,
 									"top": 0,
 									"width": 473,
 									"height": 65,
@@ -1118,8 +1118,8 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 696,
-									"top": 112,
+									"left": 688,
+									"top": 104,
 									"width": 297,
 									"height": 65,
 									"autoResize": false,
@@ -1142,7 +1142,7 @@
 									"containerChangeable": false,
 									"containerExtending": false,
 									"left": 0,
-									"top": 520,
+									"top": 576,
 									"width": 169,
 									"height": 51,
 									"autoResize": false,
@@ -1177,13 +1177,13 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 680,
-											"top": 195,
-											"width": 539.78564453125,
-											"height": 13,
+											"left": 623,
+											"top": 190,
+											"width": 291,
+											"height": 26,
 											"autoResize": false,
-											"alpha": 1.5744853468109352,
-											"distance": 271.0018450121696,
+											"alpha": 1.5649474405829817,
+											"distance": 171.00292395160966,
 											"hostEdge": {
 												"$ref": "AAAAAAFaj9UZg4F356A="
 											},
@@ -1192,7 +1192,7 @@
 											"text": "3 : Database checks the tables to see if user has significant permissions to edit calendar entry",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
-											"wordWrap": false
+											"wordWrap": true
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -1212,7 +1212,7 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 702,
+											"left": 622,
 											"top": 195,
 											"width": 0,
 											"height": 13,
@@ -1246,7 +1246,7 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 668,
+											"left": 588,
 											"top": 196,
 											"width": 0,
 											"height": 13,
@@ -1280,7 +1280,7 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 641,
+											"left": 561,
 											"top": 212,
 											"width": 14,
 											"height": 29,
@@ -1303,7 +1303,7 @@
 										"$ref": "AAAAAAFabBzlokrqQ10="
 									},
 									"lineStyle": 0,
-									"points": "648:192;678:192;678:212;654:212",
+									"points": "568:192;598:192;598:212;574:212",
 									"nameLabel": {
 										"$ref": "AAAAAAFaj9UZg4F4SjE="
 									},
@@ -1347,10 +1347,10 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 152,
-											"top": 247,
-											"width": 627.1103515625,
-											"height": 13,
+											"left": 299,
+											"top": 240,
+											"width": 252,
+											"height": 26,
 											"autoResize": false,
 											"alpha": 1.604117655636514,
 											"distance": 30.01666203960727,
@@ -1362,7 +1362,7 @@
 											"text": "4 : no information is changed in the database",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
-											"wordWrap": false
+											"wordWrap": true
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -1382,7 +1382,7 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 463,
+											"left": 423,
 											"top": 243,
 											"width": 0,
 											"height": 13,
@@ -1416,7 +1416,7 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 464,
+											"left": 424,
 											"top": 208,
 											"width": 0,
 											"height": 13,
@@ -1473,7 +1473,7 @@
 										"$ref": "AAAAAAFabBzlokrqQ10="
 									},
 									"lineStyle": 0,
-									"points": "641:224;287:224",
+									"points": "561:224;287:224",
 									"nameLabel": {
 										"$ref": "AAAAAAFabB9KwEtU8do="
 									},
@@ -1517,13 +1517,13 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 0,
-											"top": 287,
-											"width": 471.70703125,
-											"height": 13,
+											"left": 72,
+											"top": 247,
+											"width": 201,
+											"height": 26,
 											"autoResize": false,
-											"alpha": 2.991221248024307,
-											"distance": 66.75327707311455,
+											"alpha": 4.588033575581539,
+											"distance": 24.186773244895647,
 											"hostEdge": {
 												"$ref": "AAAAAAFaj9oQAYGXbts="
 											},
@@ -1532,7 +1532,7 @@
 											"text": "5 : \"You must  have created this entry to edit it\" ",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
-											"wordWrap": false
+											"wordWrap": true
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -1674,7 +1674,7 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 704,
+									"left": 688,
 									"top": 480,
 									"width": 353,
 									"height": 41,
@@ -1697,7 +1697,7 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 696,
+									"left": 688,
 									"top": 312,
 									"width": 489,
 									"height": 73,
@@ -1733,13 +1733,13 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 32,
-											"top": 338,
-											"width": 349.00048828125,
-											"height": 13,
+											"left": 64,
+											"top": 317,
+											"width": 201,
+											"height": 26,
 											"autoResize": false,
-											"alpha": 0.24497860430334858,
-											"distance": 41.23105625617661,
+											"alpha": -4.62565107322842,
+											"distance": 23.08679276123039,
 											"hostEdge": {
 												"$ref": "AAAAAAFaj934roG7Ak0="
 											},
@@ -1748,7 +1748,7 @@
 											"text": "6 : User selects calendar entry to edit and tries to make edits",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
-											"wordWrap": false
+											"wordWrap": true
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -1903,13 +1903,13 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 316,
-											"top": 368,
-											"width": 302.7958984375,
-											"height": 13,
+											"left": 310,
+											"top": 343,
+											"width": 241,
+											"height": 26,
 											"autoResize": false,
-											"alpha": 1.5707963267948966,
-											"distance": 10,
+											"alpha": 1.464060301056241,
+											"distance": 28.160255680657446,
 											"hostEdge": {
 												"$ref": "AAAAAAFaj99rnoHzD+U="
 											},
@@ -1918,7 +1918,7 @@
 											"text": "7 : Calendar entry sends information to the database",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
-											"wordWrap": false
+											"wordWrap": true
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -1938,7 +1938,7 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 467,
+											"left": 427,
 											"top": 353,
 											"width": 0,
 											"height": 13,
@@ -1972,7 +1972,7 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 467,
+											"left": 427,
 											"top": 388,
 											"width": 0,
 											"height": 13,
@@ -2006,7 +2006,7 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 641,
+											"left": 561,
 											"top": 384,
 											"width": 14,
 											"height": 29,
@@ -2029,7 +2029,7 @@
 										"$ref": "AAAAAAFabByzWErKj0s="
 									},
 									"lineStyle": 0,
-									"points": "293:384;641:384",
+									"points": "293:384;561:384",
 									"nameLabel": {
 										"$ref": "AAAAAAFaj99rnoH0snw="
 									},
@@ -2073,13 +2073,13 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 680,
-											"top": 435,
-											"width": 539.78564453125,
-											"height": 13,
+											"left": 624,
+											"top": 423,
+											"width": 317,
+											"height": 26,
 											"autoResize": false,
-											"alpha": 1.5744853468109352,
-											"distance": 271.0018450121696,
+											"alpha": 1.6033924701425202,
+											"distance": 184.09780009549272,
 											"hostEdge": {
 												"$ref": "AAAAAAFaj9/dRoIJBQk="
 											},
@@ -2088,7 +2088,7 @@
 											"text": "8 : Database checks the tables to see if user has significant permissions to edit calendar entry",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
-											"wordWrap": false
+											"wordWrap": true
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -2108,7 +2108,7 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 702,
+											"left": 622,
 											"top": 435,
 											"width": 0,
 											"height": 13,
@@ -2142,7 +2142,7 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 668,
+											"left": 588,
 											"top": 436,
 											"width": 0,
 											"height": 13,
@@ -2176,7 +2176,7 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 641,
+											"left": 561,
 											"top": 452,
 											"width": 14,
 											"height": 29,
@@ -2199,7 +2199,7 @@
 										"$ref": "AAAAAAFabBzlokrqQ10="
 									},
 									"lineStyle": 0,
-									"points": "648:432;678:432;678:452;654:452",
+									"points": "568:432;598:432;598:452;574:452",
 									"nameLabel": {
 										"$ref": "AAAAAAFaj9/dRoIKkFQ="
 									},
@@ -2243,13 +2243,13 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 364,
-											"top": 494,
+											"left": 319,
+											"top": 446,
 											"width": 204.5341796875,
-											"height": 13,
+											"height": 26,
 											"autoResize": false,
-											"alpha": 1.5707963267948966,
-											"distance": 10,
+											"alpha": -1.279339991032689,
+											"distance": 20.8806130178211,
 											"hostEdge": {
 												"$ref": "AAAAAAFaj+Co3oIgoGU="
 											},
@@ -2258,7 +2258,7 @@
 											"text": "9 : Information updated in database",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
-											"wordWrap": false
+											"wordWrap": true
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -2278,8 +2278,8 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 466,
-											"top": 509,
+											"left": 426,
+											"top": 499,
 											"width": 0,
 											"height": 13,
 											"autoResize": false,
@@ -2312,8 +2312,8 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 467,
-											"top": 474,
+											"left": 427,
+											"top": 464,
 											"width": 0,
 											"height": 13,
 											"autoResize": false,
@@ -2347,7 +2347,7 @@
 											"containerChangeable": false,
 											"containerExtending": false,
 											"left": 287,
-											"top": 490,
+											"top": 480,
 											"width": 14,
 											"height": 25,
 											"autoResize": false
@@ -2369,7 +2369,7 @@
 										"$ref": "AAAAAAFabBzlokrqQ10="
 									},
 									"lineStyle": 0,
-									"points": "648:490;287:490",
+									"points": "568:480;287:480",
 									"nameLabel": {
 										"$ref": "AAAAAAFaj+Co3oIh3pg="
 									},
@@ -2413,13 +2413,13 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 70,
-											"top": 508,
-											"width": 196.3837890625,
-											"height": 13,
+											"left": 83,
+											"top": 462,
+											"width": 171,
+											"height": 26,
 											"autoResize": false,
-											"alpha": 1.5707963267948966,
-											"distance": 10,
+											"alpha": -1.535097570803475,
+											"distance": 28.0178514522438,
 											"hostEdge": {
 												"$ref": "AAAAAAFaj+D3iYI2uSs="
 											},
@@ -2428,7 +2428,7 @@
 											"text": "10 : \"Changes successfully made\"",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
-											"wordWrap": false
+											"wordWrap": true
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -2891,7 +2891,7 @@
 											"containerChangeable": false,
 											"containerExtending": false,
 											"left": 70.97900390625,
-											"top": 10,
+											"top": 5,
 											"width": 162.12255859375,
 											"height": 13,
 											"autoResize": false,
@@ -2917,7 +2917,7 @@
 											"containerChangeable": false,
 											"containerExtending": false,
 											"left": 5,
-											"top": 10,
+											"top": 5,
 											"width": 60.97900390625,
 											"height": 13,
 											"autoResize": false,
@@ -2938,9 +2938,9 @@
 									"containerChangeable": false,
 									"containerExtending": false,
 									"left": 0,
-									"top": 5,
-									"width": 705,
-									"height": 460,
+									"top": 0,
+									"width": 1129,
+									"height": 428,
 									"autoResize": false,
 									"nameLabel": {
 										"$ref": "AAAAAAFabCHfbEt8PCg="
@@ -3322,7 +3322,7 @@
 											"left": 359,
 											"top": 80,
 											"width": 1,
-											"height": 183,
+											"height": 222,
 											"autoResize": false
 										}
 									],
@@ -3338,7 +3338,7 @@
 									"left": 304,
 									"top": 40,
 									"width": 110.314453125,
-									"height": 223,
+									"height": 262,
 									"autoResize": false,
 									"stereotypeDisplay": "label",
 									"showVisibility": true,
@@ -3524,7 +3524,7 @@
 											"left": 592,
 											"top": 80,
 											"width": 1,
-											"height": 183,
+											"height": 222,
 											"autoResize": false
 										}
 									],
@@ -3540,7 +3540,7 @@
 									"left": 536,
 									"top": 40,
 									"width": 112.47265625,
-									"height": 223,
+									"height": 262,
 									"autoResize": false,
 									"stereotypeDisplay": "label",
 									"showVisibility": true,
@@ -3753,13 +3753,13 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 353,
-											"top": 131,
-											"width": 238.4560546875,
-											"height": 13,
+											"left": 383,
+											"top": 110,
+											"width": 176,
+											"height": 26,
 											"autoResize": false,
-											"alpha": 1.5707963267948966,
-											"distance": 10,
+											"alpha": -4.668938518955431,
+											"distance": 23.021728866442675,
 											"hostEdge": {
 												"$ref": "AAAAAAFabCQBEkwCVMk="
 											},
@@ -3768,7 +3768,7 @@
 											"text": "2 : selects calendar entry that wish to edit",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
-											"wordWrap": false
+											"wordWrap": true
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -3923,13 +3923,13 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 566,
+											"left": 656,
 											"top": 179,
 											"width": 131.51708984375,
 											"height": 13,
 											"autoResize": false,
-											"alpha": 1.5707963267948966,
-											"distance": 10,
+											"alpha": 1.5808959923600188,
+											"distance": 99.00505037623081,
 											"hostEdge": {
 												"$ref": "AAAAAAFabCSDvkwYXJc="
 											},
@@ -4093,13 +4093,13 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 351,
-											"top": 236,
-											"width": 246.4287109375,
-											"height": 13,
+											"left": 374,
+											"top": 246,
+											"width": 202,
+											"height": 26,
 											"autoResize": false,
-											"alpha": 1.5707963267948966,
-											"distance": 10,
+											"alpha": 1.5707966839377536,
+											"distance": 28,
 											"hostEdge": {
 												"$ref": "AAAAAAFabCTtKEwv9Zw="
 											},
@@ -4108,7 +4108,7 @@
 											"text": "4 : returns Admin Leader to Calendar page",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
-											"wordWrap": false
+											"wordWrap": true
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -4296,10 +4296,10 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 0,
-									"top": 464,
-									"width": 169,
-									"height": 51,
+									"left": 16,
+									"top": 440,
+									"width": 161,
+									"height": 25,
 									"autoResize": false,
 									"text": "Benefitting actor: User",
 									"wordWrap": true
