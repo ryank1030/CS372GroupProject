@@ -1,0 +1,5 @@
+https://www.npmjs.com/package/facebook-chat-api (Facebook chat)
+https://developers.google.com/+/hangouts/api/gapi.hangout (Google Hangouts)
+https://dev.twitter.com/overview/api/tweets (Twitter Tweets)
+https://api.slack.com/rtm
+https://www.w3.org/TR/2010/WD-webmessaging-20101118/
