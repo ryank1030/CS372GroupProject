@@ -1,3 +1,3 @@
 # CS372GroupProject
-<H1>CS 372 Group project</H1>
-<H6>Contributers: Ryan Kopp</H6>
+<h1>Actually repo is located at Zraon/CS372GroupProject</h1>
+<a href="https://github.com/Zraon/CS372GroupProject">Full Project</a>
